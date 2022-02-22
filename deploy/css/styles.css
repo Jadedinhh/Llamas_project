@@ -355,6 +355,10 @@ template {
 /* =============
     Typography
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Buttons
 ============= */
