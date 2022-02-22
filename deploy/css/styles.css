@@ -398,3 +398,34 @@ a {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #5A433C;
+  height: 100px;
+  margin-top: 64px;
+}
+
+#hero #hero-image {
+  align-items: center;
+  background-image: url("../img/hero/llamas_hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+@media (min-width: 1024px) {
+  #hero #hero-image {
+    height: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-image {
+    height: 1000px;
+  }
+}
+#hero #hero-content {
+  display: grid;
+  grid-template-areas: ". hero-content .";
+  grid-template-columns: 16px auto 16px;
+}
+#hero #hero-content > div {
+  grid-area: hero-content;
+}

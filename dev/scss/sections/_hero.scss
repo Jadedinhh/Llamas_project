@@ -1,0 +1,40 @@
+#hero{
+
+
+    #hero-image{
+        align-items: center;
+        background-image: url("../img/hero/llamas_hero.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+
+        @include lg {
+            height: 900px;
+        }
+
+        @include xl {
+            height: 1000px;
+        }
+    }
+
+    #hero-content {
+
+        display: grid;
+        grid-template-areas: ". hero-content .";
+        grid-template-columns: 16px auto 16px;
+        // margin-top: 13px;
+
+        >div{
+            grid-area: hero-content;
+
+            h1{
+
+            }
+
+            p{
+
+            }
+        }
+
+    }
+}
