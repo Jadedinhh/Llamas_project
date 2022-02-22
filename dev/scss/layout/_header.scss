@@ -2,5 +2,24 @@
     Header
 ============= */
 #header{
-    
+
+    #logo-container{
+
+        margin: 15px;
+        a:link,
+        a:visited {
+            color: $caramel;
+            font-size: rem-calc(30);
+            font-weight: 600;
+            transition: 0.25s;
+
+            &:hover {
+                color: $brown;
+            }
+
+            @include lg {
+                font-size: rem-calc(36);
+            }
+        }
+    }
 }

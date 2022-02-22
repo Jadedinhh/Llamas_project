@@ -371,6 +371,27 @@ a {
 /* =============
     Header
 ============= */
+#header #logo-container {
+  margin: 15px;
+}
+#header #logo-container a:link,
+#header #logo-container a:visited {
+  color: #AC6737;
+  font-size: 1.875rem;
+  font-weight: 600;
+  transition: 0.25s;
+}
+#header #logo-container a:link:hover,
+#header #logo-container a:visited:hover {
+  color: #5A433C;
+}
+@media (min-width: 1024px) {
+  #header #logo-container a:link,
+#header #logo-container a:visited {
+    font-size: 2.25rem;
+  }
+}
+
 /* =============
     Footer
 ============= */
