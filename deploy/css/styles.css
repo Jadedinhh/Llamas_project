@@ -371,6 +371,9 @@ a {
 /* =============
     Header
 ============= */
+#header {
+  background-color: #fff;
+}
 #header #logo-container {
   margin: 15px;
 }
