@@ -20,19 +20,31 @@
     #hero-content {
 
         display: grid;
-        grid-template-areas: ". hero-content .";
+        grid-template-areas: " . hero-content . ";
         grid-template-columns: 16px auto 16px;
         // margin-top: 13px;
 
         >div{
             grid-area: hero-content;
 
-            h1{
+            display: grid;
+            grid-template-columns: 20% auto;
+            grid-template-areas: "h1 h2"
+                                 "h1 h2";
 
+
+            h1{
+                grid-area: h1;
+                 border: $brown;
+                 border-radius: 50%;
+                 height: 50px;
+                 width: 50px;
+                 border-style: solid;
+                 color: $brown;
             }
 
             p{
-
+                grid-area: h2;
             }
         }
 
