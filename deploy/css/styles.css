@@ -359,6 +359,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
@@ -423,9 +427,24 @@ footer {
 }
 #hero #hero-content {
   display: grid;
-  grid-template-areas: ". hero-content .";
+  grid-template-areas: " . hero-content . ";
   grid-template-columns: 16px auto 16px;
 }
 #hero #hero-content > div {
   grid-area: hero-content;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "h1 h2" "h1 h2";
+}
+#hero #hero-content > div h1 {
+  grid-area: h1;
+  border: #5A433C;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  color: #5A433C;
+}
+#hero #hero-content > div p {
+  grid-area: h2;
 }
