@@ -24,27 +24,31 @@
         grid-template-columns: 16px auto 16px;
         // margin-top: 13px;
 
+        @include lg {
+            grid-template-columns: auto 1000px auto;
+        }
+    
+        @include xl {
+            grid-template-columns: auto 1300px auto;
+        }
+
         >div{
             grid-area: hero-content;
 
             display: grid;
             grid-template-columns: 20% auto;
-            grid-template-areas: "h1 h2"
-                                 "h1 h2";
+            grid-template-areas: "h1 h2";
 
 
             h1{
-                grid-area: h1;
-                 border: $brown;
-                 border-radius: 50%;
-                 height: 50px;
-                 width: 50px;
-                 border-style: solid;
-                 color: $brown;
+               grid-area: h1;
+               color: $brown;
+               font-size: rem-calc(190);
             }
 
-            p{
+            h2{
                 grid-area: h2;
+                color: $caramel;
             }
         }
 

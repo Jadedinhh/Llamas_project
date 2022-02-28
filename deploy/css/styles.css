@@ -625,21 +625,28 @@ footer > div #subcribe button:hover {
   grid-template-areas: " . hero-content . ";
   grid-template-columns: 16px auto 16px;
 }
+@media (min-width: 1024px) {
+  #hero #hero-content {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content {
+    grid-template-columns: auto 1300px auto;
+  }
+}
 #hero #hero-content > div {
   grid-area: hero-content;
   display: grid;
   grid-template-columns: 20% auto;
-  grid-template-areas: "h1 h2" "h1 h2";
+  grid-template-areas: "h1 h2";
 }
 #hero #hero-content > div h1 {
   grid-area: h1;
-  border: #5A433C;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  border-style: solid;
   color: #5A433C;
+  font-size: 11.875rem;
 }
-#hero #hero-content > div p {
+#hero #hero-content > div h2 {
   grid-area: h2;
+  color: #AC6737;
 }
