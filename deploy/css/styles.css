@@ -392,23 +392,25 @@ ul li {
   width: 100%;
   left: 0;
 }
-#header #logo-container {
-  margin: 15px;
+#header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: auto 30%;
 }
-#header #logo-container a:link,
-#header #logo-container a:visited {
-  color: #AC6737;
+#header > div #logo-container a:link,
+#header > div #logo-container a:visited {
+  color: #5A433C;
   font-size: 1.875rem;
-  font-weight: 600;
+  font-family: "Fredoka One", cursive;
   transition: 0.25s;
 }
-#header #logo-container a:link:hover,
-#header #logo-container a:visited:hover {
-  color: #5A433C;
+#header > div #logo-container a:link:hover,
+#header > div #logo-container a:visited:hover {
+  color: #AC6737;
 }
 @media (min-width: 1024px) {
-  #header #logo-container a:link,
-#header #logo-container a:visited {
+  #header > div #logo-container a:link,
+#header > div #logo-container a:visited {
     font-size: 2.25rem;
   }
 }

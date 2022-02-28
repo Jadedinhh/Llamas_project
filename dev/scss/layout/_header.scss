@@ -8,18 +8,24 @@
     width: 100%;
     left: 0;
 
-    #logo-container{
+>div{
 
-        margin: 15px;
+    display: grid;
+        grid-template-areas: "logo burger"
+            "nav nav";
+        grid-template-columns: auto 30%;
+
+     #logo-container{
+
         a:link,
         a:visited {
-            color: $caramel;
+            color: $brown;
             font-size: rem-calc(30);
-            font-weight: 600;
+            font-family: 'Fredoka One', cursive;
             transition: 0.25s;
 
             &:hover {
-                color: $brown;
+                color: $caramel;
             }
 
             @include lg {
@@ -27,4 +33,7 @@
             }
         }
     }
+}
+
+   
 }
