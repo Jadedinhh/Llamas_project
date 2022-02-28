@@ -1,8 +1,106 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     background-color: $brown;
-    height: 100px;
     margin-top: 64px;
+    padding: 40px 0;
+    display: grid;
+    grid-template-areas: ". footer .";
+    grid-template-columns: 45px auto 45px;
+
+
+    >div {
+        grid-area: footer;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "h1 subscribe"
+                "h5 subscribe"
+                "socials subcribe";
+        }
+
+
+
+        h1 {
+            
+            color: $tan;
+
+            @include md{
+                grid-area: h1;
+            }
+        }
+
+        h5 {
+            grid-area: h5;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 200;
+            font-size: rem-calc(18);
+            color: $tan;
+        }
+
+        #socials {
+            grid-area: socials;
+            margin-top: 40px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            
+
+
+                li {
+                    margin: 0 40px;
+
+                    a:link,
+                    a:visited{
+                        color: $caramel;
+                        font-size: rem-calc(40);
+                    }
+
+                    a:hover,
+                    a:active {
+                        color: $tan;
+                    }
+                }
+            }
+        }
+
+        #subcribe {
+            grid-area: subcribe;
+
+            input[type=text],
+            select {
+                display: inline-block;
+                width: 100%;
+                padding: 12px 20px;
+                border-radius: 10px;
+                border: none;
+                margin: 8px 0;
+                box-sizing: border-box;
+                background-color: $tan;
+            }
+             button {
+                width: 100%;
+                padding: 12px 20px;
+                border-radius: 10px;
+                border: none;
+                margin: 8px 0;
+                box-sizing: border-box;
+                background-color: $blue;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 300;
+
+                &:hover{
+                    background-color: $caramel;
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
 }
