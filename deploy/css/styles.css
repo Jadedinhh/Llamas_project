@@ -387,7 +387,10 @@ ul li {
     Header
 ============= */
 #header {
-  background-color: #fff;
+  background-color: #FFF5EB;
+  top: 0;
+  width: 100%;
+  left: 0;
 }
 #header #logo-container {
   margin: 15px;
