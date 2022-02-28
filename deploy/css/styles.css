@@ -415,8 +415,87 @@ ul li {
 ============= */
 footer {
   background-color: #5A433C;
-  height: 100px;
   margin-top: 64px;
+  padding: 40px 0;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 45px auto 45px;
+}
+footer > div {
+  grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "h1 subscribe" "h5 subscribe" "socials subcribe";
+  }
+}
+footer > div h1 {
+  color: #FFF5EB;
+}
+@media (min-width: 768px) {
+  footer > div h1 {
+    grid-area: h1;
+  }
+}
+footer > div h5 {
+  grid-area: h5;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  color: #FFF5EB;
+}
+footer > div #socials {
+  grid-area: socials;
+  margin-top: 40px;
+}
+footer > div #socials ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > div #socials ul li {
+  margin: 0 40px;
+}
+footer > div #socials ul li a:link,
+footer > div #socials ul li a:visited {
+  color: #AC6737;
+  font-size: 2.5rem;
+}
+footer > div #socials ul li a:hover,
+footer > div #socials ul li a:active {
+  color: #FFF5EB;
+}
+footer > div #subcribe {
+  grid-area: subcribe;
+}
+footer > div #subcribe input[type=text],
+footer > div #subcribe select {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #FFF5EB;
+}
+footer > div #subcribe button {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #ABCEF4;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+}
+footer > div #subcribe button:hover {
+  background-color: #AC6737;
+  color: #ABCEF4;
+  cursor: pointer;
 }
 
 #hero #hero-image {
