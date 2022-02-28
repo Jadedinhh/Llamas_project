@@ -421,13 +421,23 @@ footer {
   grid-template-areas: ". footer .";
   grid-template-columns: 45px auto 45px;
 }
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 1300px auto;
+  }
+}
 footer > div {
   grid-area: footer;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 60% auto;
     grid-template-areas: "h1 subscribe" "h5 subscribe" "socials subcribe";
   }
 }
@@ -448,12 +458,17 @@ footer > div h5 {
 }
 footer > div #socials {
   grid-area: socials;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 footer > div #socials ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  footer > div #socials ul {
+    justify-content: flex-start;
+  }
 }
 footer > div #socials ul li {
   margin: 0 40px;
@@ -467,8 +482,11 @@ footer > div #socials ul li a:hover,
 footer > div #socials ul li a:active {
   color: #FFF5EB;
 }
-footer > div #subcribe {
-  grid-area: subcribe;
+@media (min-width: 768px) {
+  footer > div #subcribe {
+    grid-area: subcribe;
+    margin-top: -120px;
+  }
 }
 footer > div #subcribe input[type=text],
 footer > div #subcribe select {
