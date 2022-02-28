@@ -1,39 +1,103 @@
 /* =============
     Header
 ============= */
-#header{
+#header {
 
     background-color: $tan;
     top: 0;
     width: 100%;
     left: 0;
-
->div{
+    padding: 20px 0;
 
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    position: fixed;
+
+
+    >div {
+
+        display: grid;
+        grid-area: footer;
         grid-template-areas: "logo burger"
-            "nav nav";
-        grid-template-columns: auto 30%;
+                                "nav nav";
+        grid-template-columns: auto 20%;
 
-     #logo-container{
 
-        a:link,
-        a:visited {
-            color: $brown;
-            font-size: rem-calc(30);
-            font-family: 'Fredoka One', cursive;
-            transition: 0.25s;
+        @include lg{
+            grid-template-columns: 30% auto;
+            grid-template-areas: "logo nav";
+        }
+    
+        #logo-container {
 
-            &:hover {
-                color: $caramel;
-            }
+            grid-area: logo;
 
-            @include lg {
-                font-size: rem-calc(36);
+            a:link,
+            a:visited {
+                color: $brown;
+                font-size: rem-calc(30);
+                font-family: 'Fredoka One', cursive;
+                transition: 0.25s;
+
+                &:hover {
+                    color: $caramel;
+                }
+
+                @include lg {
+                    font-size: rem-calc(36);
+                }
             }
         }
-    }
-}
 
-   
+        #burger-container {
+            cursor: pointer;
+            width: 40px;
+            position: absolute;
+            height: 10px;
+            
+            grid-area: burger;
+
+
+            @include lg {
+                display: none !important;
+            }
+
+            div {
+            
+                span {
+                    width: 100%;
+                    background-color: $caramel;
+                    margin-top: 20px;
+                    height: 6px;
+                    position: absolute;
+                    top: 50;
+                    right: 0;
+                    width: 100%;
+                    border-radius: 10px;
+
+                    &:nth-child(2) {
+                        top: 16px;
+                        width: 100%;
+                    }
+
+                    &:nth-child(3) {
+                        top: 32px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #nav-container {
+            grid-area: nav;
+             @include lg{
+                 display: block !important;
+             }
+
+            
+        }
+    }
+
+
 }

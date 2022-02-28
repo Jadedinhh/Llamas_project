@@ -1,3 +1,36 @@
 /* =============
     Navigation
 ============= */
+
+#nav-container {
+
+    ul {
+        @include lg {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        li {
+            padding-top: 10px;
+
+            a:link,
+            a:visited {
+                color: $caramel;
+                font-size: rem-calc(16);
+                font-family: 'Fredoka One', cursive;
+                transition: 0.25s;
+
+                &:hover {
+                    color: $brown;
+                }
+
+
+                @include lg {
+                    font-size: rem-calc(20);
+                }
+            }
+        }
+    }
+
+}

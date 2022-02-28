@@ -383,6 +383,34 @@ ul li {
 /* =============
     Navigation
 ============= */
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+#nav-container ul li {
+  padding-top: 10px;
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #AC6737;
+  font-size: 1rem;
+  font-family: "Fredoka One", cursive;
+  transition: 0.25s;
+}
+#nav-container ul li a:link:hover,
+#nav-container ul li a:visited:hover {
+  color: #5A433C;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    font-size: 1.25rem;
+  }
+}
+
 /* =============
     Header
 ============= */
@@ -391,11 +419,26 @@ ul li {
   top: 0;
   width: 100%;
   left: 0;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  position: fixed;
 }
 #header > div {
   display: grid;
+  grid-area: footer;
   grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: auto 30%;
+  grid-template-columns: auto 20%;
+}
+@media (min-width: 1024px) {
+  #header > div {
+    grid-template-columns: 30% auto;
+    grid-template-areas: "logo nav";
+  }
+}
+#header > div #logo-container {
+  grid-area: logo;
 }
 #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
@@ -412,6 +455,45 @@ ul li {
   #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
     font-size: 2.25rem;
+  }
+}
+#header > div #burger-container {
+  cursor: pointer;
+  width: 40px;
+  position: absolute;
+  height: 10px;
+  grid-area: burger;
+}
+@media (min-width: 1024px) {
+  #header > div #burger-container {
+    display: none !important;
+  }
+}
+#header > div #burger-container div span {
+  width: 100%;
+  background-color: #AC6737;
+  margin-top: 20px;
+  height: 6px;
+  position: absolute;
+  top: 50;
+  right: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+#header > div #burger-container div span:nth-child(2) {
+  top: 16px;
+  width: 100%;
+}
+#header > div #burger-container div span:nth-child(3) {
+  top: 32px;
+  width: 100%;
+}
+#header > div #nav-container {
+  grid-area: nav;
+}
+@media (min-width: 1024px) {
+  #header > div #nav-container {
+    display: block !important;
   }
 }
 
