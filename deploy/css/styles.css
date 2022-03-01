@@ -762,6 +762,11 @@ footer > div #subcribe button:hover {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 1024px) {
+  #personality > div #personality-content > div p1 {
+    font-size: 1.875rem;
+  }
+}
 #personality > div #personality-content > div p2 {
   grid-area: p2;
   color: #5A433C;
@@ -771,6 +776,11 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #personality > div #personality-content > div p2 {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #personality > div #personality-content > div p2 {
+    font-size: 1.875rem;
   }
 }
 
@@ -789,6 +799,12 @@ footer > div #subcribe button:hover {
   display: grid;
   grid-template-columns: 25% auto;
   grid-template-areas: "h1 h2" "h1 p";
+}
+@media (min-width: 768px) {
+  #stickout > div #stickout-content > div {
+    grid-template-columns: 10% 40% auto;
+    grid-template-areas: "h1 h2 s-image" "h1 p s-image";
+  }
 }
 #stickout > div #stickout-content > div h1 {
   grid-area: h1;
@@ -813,4 +829,20 @@ footer > div #subcribe button:hover {
 #stickout > div #stickout-content > div p {
   grid-area: p;
   color: #FFF5EB;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  #stickout > div #stickout-content > div p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #stickout > div #stickout-content > div p {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 768px) {
+  #stickout > div #stickout-content > div #stickout-image {
+    grid-area: s-image;
+  }
 }

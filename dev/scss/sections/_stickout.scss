@@ -17,7 +17,14 @@
           display: grid;
           grid-template-columns: 25% auto;
           grid-template-areas: "h1 h2"
-                            "h1 p";
+                               "h1 p";
+
+
+        @include md{
+            grid-template-columns: 10% 40% auto;
+            grid-template-areas: "h1 h2 s-image"
+                                  "h1 p s-image";
+        }
 
         h1{
             grid-area: h1;
@@ -46,6 +53,21 @@
         p{
             grid-area: p;
             color: $tan;
+            font-size: rem-calc(18);
+
+            @include md{
+                font-size: rem-calc(24);
+            }
+
+            @include lg{
+                font-size: rem-calc(30);
+            }
+        }
+
+        #stickout-image{
+            @include md{
+                grid-area: s-image;
+            }
         }
       }
   }
