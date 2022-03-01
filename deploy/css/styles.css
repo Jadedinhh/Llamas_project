@@ -546,6 +546,7 @@ footer > div h5 {
   font-weight: 200;
   font-size: 1.125rem;
   color: #FFF5EB;
+  margin: 10px 0;
 }
 footer > div #socials {
   grid-area: socials;
@@ -576,7 +577,12 @@ footer > div #socials ul li a:active {
 @media (min-width: 768px) {
   footer > div #subcribe {
     grid-area: subcribe;
-    margin-top: -120px;
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div #subcribe {
+    margin-top: -80px;
   }
 }
 footer > div #subcribe input[type=text],
@@ -766,4 +772,45 @@ footer > div #subcribe button:hover {
   #personality > div #personality-content > div p2 {
     font-size: 1.5rem;
   }
+}
+
+#stickout {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-template-areas: ". stickout .";
+  background-color: #5A433C;
+  padding: 64px 0;
+  height: 500px;
+}
+#stickout > div {
+  grid-area: stickout;
+}
+#stickout > div #stickout-content > div {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "h1 h2" "h1 p";
+}
+#stickout > div #stickout-content > div h1 {
+  grid-area: h1;
+  margin-top: -10px;
+}
+#stickout > div #stickout-content > div .circle {
+  border-radius: 50%;
+  background-color: #FFF5EB;
+  width: 80px;
+  height: 80px;
+  color: #5A433C;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stickout > div #stickout-content > div h2 {
+  grid-area: h2;
+  font-size: 2.1875rem;
+  color: #FFF5EB;
+}
+#stickout > div #stickout-content > div p {
+  grid-area: p;
+  color: #FFF5EB;
 }
