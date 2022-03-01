@@ -369,6 +369,14 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   padding: 0;
   margin: 0;
 }
+body p {
+  padding: 0;
+  margin: 0;
+}
+body figure {
+  padding: 0;
+  margin: 0;
+}
 
 ul {
   padding: 0;
@@ -845,4 +853,93 @@ footer > div #subcribe button:hover {
   #stickout > div #stickout-content > div #stickout-image {
     grid-area: s-image;
   }
+}
+
+#maintain {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". maintain .";
+}
+#maintain > div {
+  grid-area: maintain;
+}
+#maintain > div #maintain-content {
+  margin-bottom: 40px;
+}
+#maintain > div #maintain-content > div {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "h1 h2 " " p p ";
+}
+#maintain > div #maintain-content > div h1 {
+  grid-area: h1;
+}
+#maintain > div #maintain-content > div .circle {
+  border-radius: 50%;
+  background-color: #AC6737;
+  width: 80px;
+  height: 80px;
+  color: #FFF5EB;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#maintain > div #maintain-content > div h2 {
+  grid-area: h2;
+  color: #AC6737;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  #maintain > div #maintain-content > div h2 {
+    font-size: 2.5rem;
+  }
+}
+#maintain > div #maintain-content > div p {
+  grid-area: p;
+  color: #5A433C;
+  font-size: 1.125rem;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #maintain > div #maintain-content > div p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #maintain > div #maintain-content > div p {
+    font-size: 1.875rem;
+  }
+}
+#maintain > div #sheering {
+  border-radius: 10%;
+}
+#maintain > div #sheering > div #sheering-left {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ".sheering-left .";
+  padding: 40px 0;
+  background-color: #FFF5EB;
+}
+#maintain > div #sheering > div #sheering-left > div {
+  grid-area: sheering-left;
+}
+#maintain > div #sheering > div #sheering-left > div h4 {
+  color: #AC6737;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+#maintain > div #sheering > div #sheering-left > div h1 {
+  color: #5A433C;
+  font-size: 1.375rem;
+  margin-bottom: 15px;
+}
+#maintain > div #sheering > div #sheering-right {
+  background-image: url("../img/maintain/sheering.jpg");
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
