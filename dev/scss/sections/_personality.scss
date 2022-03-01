@@ -1,6 +1,6 @@
 #personality {
 
-    margin: 64px 0;
+    padding: 64px 0;
 
     @include lg {
         display: grid;
@@ -86,6 +86,7 @@
             display: grid;
             grid-template-columns: 60px auto 60px;
             grid-template-areas: ". p-content .";
+            margin-bottom: 64px;
 
             @include md {
                 grid-template-columns: auto 600px auto;
@@ -177,5 +178,55 @@
         }
     }
 
+
+
+
+    // #p-images{
+
+
+    //     .carousel{
+
+
+    //         .carousel__slide {
+    //             background-position: center;
+    //             background-size: cover;
+    //             height: 40vh;
+    //             margin: 0 10px;
+
+    //             @include md{
+    //                 height: 50vh;
+    //             }
+
+    //             @include lg{
+    //                 height: 60vh;
+    //             }
+    //             a:link,a:visited{
+    //                 height: 100%;
+    //                 width: 100%;
+    //                 display: inline-block;
+    //             }
+    //         }
+
+    //         #p-1{
+    //             background-image: url("../img/personality/llamas1.jpg");
+    //         }
+
+    //         #p-2{
+    //             background-image: url("../img/personality/llama2.jpg");
+    //         }
+
+    //         #p-3{
+    //             background-image: url("../img/personality/llama3.jpg");
+    //         }
+
+    //         #p-4{
+    //             background-image: url("../img/personality/llama4.jpg");
+    //         }
+
+    //         #p-5{
+    //             background-image: url("../img/personality/llama5.jpg");
+    //         }
+    //     }
+    // }
 
 }

@@ -639,7 +639,7 @@ footer > div #subcribe button:hover {
 }
 
 #personality {
-  margin: 64px 0;
+  padding: 64px 0;
 }
 @media (min-width: 1024px) {
   #personality {
@@ -711,6 +711,7 @@ footer > div #subcribe button:hover {
   display: grid;
   grid-template-columns: 60px auto 60px;
   grid-template-areas: ". p-content .";
+  margin-bottom: 64px;
 }
 @media (min-width: 768px) {
   #personality > div #personality-content {
