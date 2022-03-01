@@ -699,11 +699,27 @@ footer > div #subcribe button:hover {
   grid-template-columns: 60px auto 60px;
   grid-template-areas: ". p-content .";
 }
+@media (min-width: 768px) {
+  #personality > div #personality-content {
+    grid-template-columns: auto 600px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #personality > div #personality-content {
+    grid-template-columns: auto 800px auto;
+  }
+}
 #personality > div #personality-content > div {
   grid-area: p-content;
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-areas: "h1 h2" "h1 h2" "p1 p1" "p2 p2";
+}
+@media (min-width: 768px) {
+  #personality > div #personality-content > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "h1 h2" "h1 p1" ". p1" ". p2";
+  }
 }
 #personality > div #personality-content > div h1 {
   grid-area: h1;
@@ -714,7 +730,7 @@ footer > div #subcribe button:hover {
   width: 80px;
   height: 80px;
   color: #FFF5EB;
-  font-size: 50px;
+  font-size: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -724,15 +740,30 @@ footer > div #subcribe button:hover {
   color: #AC6737;
   font-size: 2.1875rem;
 }
+@media (min-width: 768px) {
+  #personality > div #personality-content > div h2 {
+    font-size: 2.5rem;
+  }
+}
 #personality > div #personality-content > div p1 {
   grid-area: p1;
   color: #5A433C;
   font-size: 1.125rem;
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  #personality > div #personality-content > div p1 {
+    font-size: 1.5rem;
+  }
+}
 #personality > div #personality-content > div p2 {
   grid-area: p2;
   color: #5A433C;
   font-size: 1.125rem;
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #personality > div #personality-content > div p2 {
+    font-size: 1.5rem;
+  }
 }
