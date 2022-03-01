@@ -625,34 +625,42 @@ footer > div #subcribe button:hover {
   }
 }
 
-#personality #hero-content {
-  display: grid;
-  grid-template-areas: " . hero-content . ";
-  grid-template-columns: 40px auto 40px;
-  margin: 50px 0;
+#personality {
+  margin: 64px 0;
 }
 @media (min-width: 1024px) {
-  #personality #hero-content {
+  #personality {
+    display: grid;
     grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". personality .";
   }
 }
 @media (min-width: 1200px) {
-  #personality #hero-content {
+  #personality {
     grid-template-columns: auto 1200px auto;
   }
 }
-#personality #hero-content > div {
+#personality > div {
+  grid-area: personality;
+}
+#personality > div #hero-content {
+  display: grid;
+  grid-template-areas: " . hero-content . ";
+  grid-template-columns: 40px auto 40px;
+  margin-bottom: 64px;
+}
+#personality > div #hero-content > div {
   grid-area: hero-content;
   display: grid;
   grid-template-columns: 40% auto;
   grid-template-areas: "h1 h2";
 }
 @media (min-width: 768px) {
-  #personality #hero-content > div {
+  #personality > div #hero-content > div {
     grid-template-columns: 30% auto;
   }
 }
-#personality #hero-content > div h1 {
+#personality > div #hero-content > div h1 {
   grid-area: h1;
   color: #5A433C;
   font-size: 12.5rem;
@@ -660,29 +668,71 @@ footer > div #subcribe button:hover {
   justify-content: center;
 }
 @media (min-width: 768px) {
-  #personality #hero-content > div h1 {
+  #personality > div #hero-content > div h1 {
     justify-content: flex-end;
     align-items: center;
     margin-right: 50px;
   }
 }
-#personality #hero-content > div h2 {
+#personality > div #hero-content > div h2 {
   grid-area: h2;
   color: #AC6737;
   font-size: 3.125rem;
 }
 @media (min-width: 768px) {
-  #personality #hero-content > div h2 {
+  #personality > div #hero-content > div h2 {
     font-size: 4.375rem;
   }
 }
 @media (min-width: 1024px) {
-  #personality #hero-content > div h2 {
+  #personality > div #hero-content > div h2 {
     font-size: 5.3125rem;
   }
 }
 @media (min-width: 1200px) {
-  #personality #hero-content > div h2 {
+  #personality > div #hero-content > div h2 {
     font-size: 6.25rem;
   }
+}
+#personality > div #personality-content {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+  grid-template-areas: ". p-content .";
+}
+#personality > div #personality-content > div {
+  grid-area: p-content;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "h1 h2" "h1 h2" "p1 p1" "p2 p2";
+}
+#personality > div #personality-content > div h1 {
+  grid-area: h1;
+}
+#personality > div #personality-content > div .circle {
+  border-radius: 50%;
+  background-color: #AC6737;
+  width: 80px;
+  height: 80px;
+  color: #FFF5EB;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#personality > div #personality-content > div h2 {
+  grid-area: h2;
+  color: #AC6737;
+  font-size: 2.1875rem;
+}
+#personality > div #personality-content > div p1 {
+  grid-area: p1;
+  color: #5A433C;
+  font-size: 1.125rem;
+  margin-top: 20px;
+}
+#personality > div #personality-content > div p2 {
+  grid-area: p2;
+  color: #5A433C;
+  font-size: 1.125rem;
+  margin-top: 20px;
 }
