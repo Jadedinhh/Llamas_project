@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: auto 1000px auto;
         grid-template-areas: ". along .";
+        padding: 72px 0;
     }
 
     @include xl {

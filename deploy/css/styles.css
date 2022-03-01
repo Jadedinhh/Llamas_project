@@ -1037,6 +1037,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #wheat {
     grid-template-columns: auto 1000px auto;
+    padding: 72px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1111,6 +1112,7 @@ footer > div #subcribe button:hover {
     display: grid;
     grid-template-columns: auto 1000px auto;
     grid-template-areas: ". along .";
+    padding: 72px 0;
   }
 }
 @media (min-width: 1200px) {
