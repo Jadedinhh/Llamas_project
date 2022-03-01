@@ -834,10 +834,16 @@ footer > div #subcribe button:hover {
   font-size: 2.1875rem;
   color: #FFF5EB;
 }
+@media (min-width: 768px) {
+  #stickout > div #stickout-content > div h2 {
+    font-size: 2.5rem;
+  }
+}
 #stickout > div #stickout-content > div p {
   grid-area: p;
   color: #FFF5EB;
   font-size: 1.125rem;
+  margin-top: 15px;
 }
 @media (min-width: 768px) {
   #stickout > div #stickout-content > div p {
@@ -861,6 +867,21 @@ footer > div #subcribe button:hover {
   grid-template-columns: 40px auto 40px;
   grid-template-areas: ". maintain .";
 }
+@media (min-width: 768px) {
+  #maintain {
+    grid-template-columns: auto 800px auto;
+  }
+}
+@media (min-width: 1024px) {
+  #maintain {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #maintain {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 #maintain > div {
   grid-area: maintain;
 }
@@ -871,6 +892,12 @@ footer > div #subcribe button:hover {
   display: grid;
   grid-template-columns: 25% auto;
   grid-template-areas: "h1 h2 " " p p ";
+}
+@media (min-width: 768px) {
+  #maintain > div #maintain-content > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "h1 h2" "h1 p" ". p";
+  }
 }
 #maintain > div #maintain-content > div h1 {
   grid-area: h1;
@@ -912,8 +939,12 @@ footer > div #subcribe button:hover {
     font-size: 1.875rem;
   }
 }
-#maintain > div #sheering {
-  border-radius: 10%;
+@media (min-width: 768px) {
+  #maintain > div #sheering > div {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "s-left s-right";
+  }
 }
 #maintain > div #sheering > div #sheering-left {
   display: grid;
@@ -921,6 +952,12 @@ footer > div #subcribe button:hover {
   grid-template-areas: ".sheering-left .";
   padding: 40px 0;
   background-color: #FFF5EB;
+}
+@media (min-width: 768px) {
+  #maintain > div #sheering > div #sheering-left {
+    grid-area: s-left;
+    padding-top: 100px;
+  }
 }
 #maintain > div #sheering > div #sheering-left > div {
   grid-area: sheering-left;
@@ -930,10 +967,44 @@ footer > div #subcribe button:hover {
   font-size: 1rem;
   margin-bottom: 15px;
 }
-#maintain > div #sheering > div #sheering-left > div h1 {
+@media (min-width: 1024px) {
+  #maintain > div #sheering > div #sheering-left > div h4 {
+    font-size: rem-calac(19);
+  }
+}
+#maintain > div #sheering > div #sheering-left > div h2 {
   color: #5A433C;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  #maintain > div #sheering > div #sheering-left > div h2 {
+    font-size: 1.875rem;
+  }
+}
+#maintain > div #sheering > div #sheering-left > div p {
+  color: #5A433C;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  #maintain > div #sheering > div #sheering-left > div p {
+    font-size: 1.5rem;
+  }
+}
+#maintain > div #sheering > div #sheering-left > div button {
+  background-color: #ABCEF4;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 20px;
+  color: #5A433C;
+  font-weight: 500;
+  height: 60px;
+}
+#maintain > div #sheering > div #sheering-left > div button:hover {
+  background-color: #AC6737;
+  color: #ABCEF4;
+  cursor: pointer;
 }
 #maintain > div #sheering > div #sheering-right {
   background-image: url("../img/maintain/sheering.jpg");
@@ -942,4 +1013,15 @@ footer > div #subcribe button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  #maintain > div #sheering > div #sheering-right {
+    grid-area: s-right;
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #maintain > div #sheering > div #sheering-right {
+    height: 500px;
+  }
 }

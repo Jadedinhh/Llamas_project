@@ -48,12 +48,16 @@
             grid-area: h2;
             font-size: rem-calc(35);
             color: $tan;
+            @include md {
+                font-size: rem-calc(40);
+            }
         }
 
         p{
             grid-area: p;
             color: $tan;
             font-size: rem-calc(18);
+            margin-top: 15px;
 
             @include md{
                 font-size: rem-calc(24);
