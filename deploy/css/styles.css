@@ -862,7 +862,8 @@ footer > div #subcribe button:hover {
 }
 
 #maintain {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 40px auto 40px;
   grid-template-areas: ". maintain .";
@@ -1023,5 +1024,79 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #maintain > div #sheering > div #sheering-right {
     height: 500px;
+  }
+}
+
+#wheat {
+  padding: 64px 0;
+  background-color: #FFF5EB;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". wheat-content .";
+}
+@media (min-width: 1024px) {
+  #wheat {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #wheat {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#wheat #wheat-content {
+  grid-area: wheat-content;
+}
+#wheat #wheat-content > div {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "h1 h2" "image image" "p p";
+}
+@media (min-width: 768px) {
+  #wheat #wheat-content > div {
+    grid-template-columns: 40% 10% auto;
+    grid-template-areas: "image h1 h2" "image . p";
+  }
+}
+#wheat #wheat-content > div h1 {
+  grid-area: h1;
+}
+#wheat #wheat-content > div .circle {
+  border-radius: 50%;
+  background-color: #AC6737;
+  width: 80px;
+  height: 80px;
+  color: #FFF5EB;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wheat #wheat-content > div h2 {
+  grid-area: h2;
+  color: #AC6737;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  #wheat #wheat-content > div h2 {
+    font-size: 2.5rem;
+  }
+}
+#wheat #wheat-content > div #wheat-image {
+  grid-area: image;
+}
+#wheat #wheat-content > div p {
+  grid-area: p;
+  color: #5A433C;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  #wheat #wheat-content > div p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #wheat #wheat-content > div p {
+    font-size: 1.875rem;
   }
 }

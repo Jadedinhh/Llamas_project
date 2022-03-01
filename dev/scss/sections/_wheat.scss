@@ -1,0 +1,89 @@
+#wheat {
+    padding: 64px 0;
+    background-color: $tan;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". wheat-content .";
+
+
+    @include lg {
+        grid-template-columns: auto 1000px auto;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+
+    #wheat-content {
+        grid-area: wheat-content;
+
+        >div {
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-template-areas: "h1 h2"
+                "image image"
+                "p p"
+            ;
+
+
+            @include md{
+                grid-template-columns: 40% 10% auto;
+                grid-template-areas: "image h1 h2"
+                                    "image . p";
+            }
+
+            h1 {
+                grid-area: h1;
+
+            }
+
+
+            .circle {
+                border-radius: 50%;
+                background-color: $caramel;
+                width: 80px;
+                height: 80px;
+                color: $tan;
+                font-size: rem-calc(50);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+            h2 {
+                grid-area: h2;
+                color: $caramel;
+                font-size: rem-calc(35);
+
+                @include md {
+                    font-size: rem-calc(40);
+                }
+            }
+
+
+            #wheat-image {
+                grid-area: image;
+            }
+
+            p {
+                grid-area: p;
+                color: $brown;
+                font-size: rem-calc(18);
+                // margin-top: 20px;
+
+                @include md {
+                    font-size: rem-calc(24);
+                }
+
+                @include lg {
+                    font-size: rem-calc(30);
+                }
+            }
+        }
+
+
+    }
+}
