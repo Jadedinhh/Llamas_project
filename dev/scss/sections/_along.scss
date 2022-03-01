@@ -1,0 +1,88 @@
+#along {
+    padding: 64px 0;
+    background-image: linear-gradient($tan, $blue) ;
+
+    @include lg {
+        display: grid;
+        grid-template-columns: auto 1000px auto;
+        grid-template-areas: ". along .";
+    }
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #along-content {
+        grid-area: along;
+        display: grid;
+        grid-template-areas: " . along-content . ";
+        grid-template-columns: 40px auto 40px;
+
+        >div {
+            grid-area: along-content;
+
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-template-areas: "h1 h2"
+                "image image"
+                "p1 p1"
+                "p2 p2"
+            ;
+
+            h1 {
+                grid-area: h1;
+            }
+
+            .circle {
+                border-radius: 50%;
+                background-color: $caramel;
+                width: 80px;
+                height: 80px;
+                color: $tan;
+                font-size: rem-calc(50);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+            h2 {
+                grid-area: h2;
+                color: $caramel;
+                font-size: rem-calc(35);
+
+                @include md {
+                    font-size: rem-calc(40);
+                }
+            }
+
+            #along-image {
+                grid-area: image;
+            }
+
+            p1 {
+                grid-area: p1;
+                font-weight: 500;
+                color: $brown;
+                font-size: rem-calc(24);
+                margin: 15px;
+
+                @include md {
+                    font-size: rem-calc(38);
+                }
+            }
+
+            p2 {
+                grid-area: p2;
+                color: $brown;
+                font-size: rem-calc(18);
+                margin: 15px;
+
+                @include md {
+                    font-size: rem-calc(24);
+                }
+            }
+        }
+    }
+}

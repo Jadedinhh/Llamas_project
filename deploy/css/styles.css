@@ -514,7 +514,6 @@ ul li {
 ============= */
 footer {
   background-color: #5A433C;
-  margin-top: 64px;
   padding: 40px 0;
   display: grid;
   grid-template-areas: ". footer .";
@@ -1089,6 +1088,7 @@ footer > div #subcribe button:hover {
   grid-area: p;
   color: #5A433C;
   font-size: 1.125rem;
+  margin-top: 15px;
 }
 @media (min-width: 768px) {
   #wheat #wheat-content > div p {
@@ -1098,5 +1098,84 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #wheat #wheat-content > div p {
     font-size: 1.875rem;
+  }
+}
+
+#along {
+  padding: 64px 0;
+  background-image: linear-gradient(#FFF5EB, #ABCEF4);
+}
+@media (min-width: 1024px) {
+  #along {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". along .";
+  }
+}
+@media (min-width: 1200px) {
+  #along {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#along #along-content {
+  grid-area: along;
+  display: grid;
+  grid-template-areas: " . along-content . ";
+  grid-template-columns: 40px auto 40px;
+}
+#along #along-content > div {
+  grid-area: along-content;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "h1 h2" "image image" "p1 p1" "p2 p2";
+}
+#along #along-content > div h1 {
+  grid-area: h1;
+}
+#along #along-content > div .circle {
+  border-radius: 50%;
+  background-color: #AC6737;
+  width: 80px;
+  height: 80px;
+  color: #FFF5EB;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#along #along-content > div h2 {
+  grid-area: h2;
+  color: #AC6737;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  #along #along-content > div h2 {
+    font-size: 2.5rem;
+  }
+}
+#along #along-content > div #along-image {
+  grid-area: image;
+}
+#along #along-content > div p1 {
+  grid-area: p1;
+  font-weight: 500;
+  color: #5A433C;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+@media (min-width: 768px) {
+  #along #along-content > div p1 {
+    font-size: 2.375rem;
+  }
+}
+#along #along-content > div p2 {
+  grid-area: p2;
+  color: #5A433C;
+  font-size: 1.125rem;
+  margin: 15px;
+}
+@media (min-width: 768px) {
+  #along #along-content > div p2 {
+    font-size: 1.5rem;
   }
 }
