@@ -58,6 +58,12 @@
             }
 
             #along-image {
+                background-image: url("../img/along/along.jpg");
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                height: 600px;
+                border-radius: 40px;
                 grid-area: image;
             }
 

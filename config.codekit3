@@ -21,6 +21,32 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/along\/along.jpg" : {
+      "ft" : 16384,
+      "iS" : 871319,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/along\/along.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/along\/wheat.jpg" : {
+      "ft" : 16384,
+      "iS" : 503466,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/along\/wheat.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/llamas_hero.jpg" : {
       "ft" : 16384,
       "iS" : 188945,
@@ -108,6 +134,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/stickout\/llama_cutout.png" : {
+      "ft" : 32768,
+      "iS" : 712885,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/stickout\/llama_cutout.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -516,7 +555,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 666744380.47007096,
-    "displayValue" : "Llamas_project",
+    "displayValue" : "LLAMAS-PROJECT",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_green",
     "iconImageWasSetByUser" : 0
