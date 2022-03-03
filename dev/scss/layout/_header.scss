@@ -11,14 +11,14 @@
 
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
+    grid-template-areas: ". header .";
     position: fixed;
 
 
     >div {
 
         display: grid;
-        grid-area: footer;
+        grid-area: header;
         grid-template-areas: "logo burger"
                                 "nav nav";
         grid-template-columns: auto 20%;
