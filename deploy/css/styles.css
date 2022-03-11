@@ -352,6 +352,18 @@ template {
 /* =============
     Base
 ============= */
+body .circle {
+  border-radius: 50%;
+  background-color: #AC6737;
+  width: 80px;
+  height: 80px;
+  color: #FFF5EB;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -738,17 +750,6 @@ footer > div #subcribe button:hover {
 #personality > div #personality-content > div h1 {
   grid-area: h1;
 }
-#personality > div #personality-content > div .circle {
-  border-radius: 50%;
-  background-color: #AC6737;
-  width: 80px;
-  height: 80px;
-  color: #FFF5EB;
-  font-size: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #personality > div #personality-content > div h2 {
   grid-area: h2;
   color: #AC6737;
@@ -903,17 +904,6 @@ footer > div #subcribe button:hover {
 #maintain > div #maintain-content > div h1 {
   grid-area: h1;
 }
-#maintain > div #maintain-content > div .circle {
-  border-radius: 50%;
-  background-color: #AC6737;
-  width: 80px;
-  height: 80px;
-  color: #FFF5EB;
-  font-size: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #maintain > div #maintain-content > div h2 {
   grid-area: h2;
   color: #AC6737;
@@ -1062,17 +1052,6 @@ footer > div #subcribe button:hover {
 #wheat #wheat-content > div h1 {
   grid-area: h1;
 }
-#wheat #wheat-content > div .circle {
-  border-radius: 50%;
-  background-color: #AC6737;
-  width: 80px;
-  height: 80px;
-  color: #FFF5EB;
-  font-size: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 #wheat #wheat-content > div h2 {
   grid-area: h2;
   color: #AC6737;
@@ -1134,17 +1113,6 @@ footer > div #subcribe button:hover {
 }
 #along #along-content > div h1 {
   grid-area: h1;
-}
-#along #along-content > div .circle {
-  border-radius: 50%;
-  background-color: #AC6737;
-  width: 80px;
-  height: 80px;
-  color: #FFF5EB;
-  font-size: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #along #along-content > div h2 {
   grid-area: h2;
