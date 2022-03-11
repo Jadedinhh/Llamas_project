@@ -863,8 +863,7 @@ footer > div #subcribe button:hover {
 }
 
 #maintain {
-  padding-top: 64px;
-  padding-bottom: 20px;
+  padding: 64px 0;
   display: grid;
   grid-template-columns: 40px auto 40px;
   grid-template-areas: ". maintain .";
