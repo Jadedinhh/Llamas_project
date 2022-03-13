@@ -77,12 +77,12 @@
                 }
 
                 @include lg{
-                    height: 800px;
+                    margin-top: 20px;
                 }
 
-                @include xl{
-                    height: 450px;
-                }
+                // @include xl{
+                //     height: 90px;
+                // }
 
 
             }

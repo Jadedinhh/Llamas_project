@@ -1132,12 +1132,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #wheat #wheat-content > div #wheat-image {
-    height: 800px;
-  }
-}
-@media (min-width: 1200px) {
-  #wheat #wheat-content > div #wheat-image {
-    height: 450px;
+    margin-top: 20px;
   }
 }
 #wheat #wheat-content > div p {
