@@ -1,245 +1,245 @@
 #personality {
-   
-    >div{
-        
 
-    background-image: url("../img/personality/furwithgradient.png");
-    background-position: center;
-    background-size: cover;
-    margin-top: -40px;
-    padding: 64px 0;
+    >div {
 
-    height: 700px;
 
-    @include md{
-        height: 1000px;
-        margin-top: -60px;
-        padding: 72px 0;
-    }
+        background-image: url("../img/personality/furwithgradient.png");
+        background-position: center;
+        background-size: cover;
+        margin-top: -40px;
+        padding: 64px 0;
+
+        height: 700px;
+
+        @include md {
+            height: 1000px;
+            margin-top: -60px;
+            padding: 72px 0;
+        }
 
 
         @include lg {
             display: grid;
             grid-template-columns: auto 1000px auto;
             grid-template-areas: ". personality .";
-  height: 1600px;
-  margin-top: -90px;
-  padding: 100px 0;
+            height: 1600px;
+            margin-top: -90px;
+            padding: 100px 0;
         }
-    
+
         @include xl {
             grid-template-columns: auto 1200px auto;
             height: 2100px;
-            margin-top: -120px;
+            margin-top: -125px;
             padding: 150px 0;
         }
 
 
-         >div {
+        >div {
 
-        grid-area: personality;
-
-
-
-        #hero-content {
-
-            display: grid;
-            grid-template-areas: " . hero-content . ";
-            grid-template-columns: 40px auto 40px;
-            margin-bottom: 64px;
+            grid-area: personality;
 
 
 
-            >div {
-                grid-area: hero-content;
+            #hero-content {
 
                 display: grid;
-                grid-template-columns: 40% auto;
-                grid-template-areas: "h1 h2";
+                grid-template-areas: " . hero-content . ";
+                grid-template-columns: 40px auto 40px;
+                margin-bottom: 64px;
 
+
+
+                >div {
+                    grid-area: hero-content;
+
+                    display: grid;
+                    grid-template-columns: 40% auto;
+                    grid-template-areas: "h1 h2";
+
+
+                    @include md {
+                        grid-template-columns: 30% auto;
+                    }
+
+
+                    h1 {
+                        grid-area: h1;
+                        color: $brown;
+                        font-size: rem-calc(200);
+                        display: flex;
+                        justify-content: center;
+
+                        @include md {
+                            //    font-size: rem-calc(190);
+                            justify-content: flex-end;
+                            align-items: center;
+                            margin-right: 50px;
+                        }
+
+                        //    @include lg{
+                        //        font-size: rem-calc(180);
+                        //    }
+                    }
+
+                    h2 {
+                        grid-area: h2;
+                        color: $caramel;
+                        font-size: rem-calc(50);
+
+                        @include md {
+                            font-size: rem-calc(70);
+
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(85);
+                        }
+
+                        @include xl {
+                            font-size: rem-calc(100);
+                        }
+                    }
+                }
+
+            }
+
+            #personality-content {
+
+                display: grid;
+                grid-template-columns: 60px auto 60px;
+                grid-template-areas: ". p-content .";
+                margin-bottom: 64px;
 
                 @include md {
+                    grid-template-columns: auto 600px auto;
+                }
+
+                @include lg {
+                    grid-template-columns: auto 800px auto;
+                }
+
+
+                >div {
+                    grid-area: p-content;
+                    display: grid;
                     grid-template-columns: 30% auto;
-                }
-
-
-                h1 {
-                    grid-area: h1;
-                    color: $brown;
-                    font-size: rem-calc(200);
-                    display: flex;
-                    justify-content: center;
-
-                    @include md {
-                        //    font-size: rem-calc(190);
-                        justify-content: flex-end;
-                        align-items: center;
-                        margin-right: 50px;
-                    }
-
-                    //    @include lg{
-                    //        font-size: rem-calc(180);
-                    //    }
-                }
-
-                h2 {
-                    grid-area: h2;
-                    color: $caramel;
-                    font-size: rem-calc(50);
-
-                    @include md {
-                        font-size: rem-calc(70);
-
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(85);
-                    }
-
-                    @include xl {
-                        font-size: rem-calc(100);
-                    }
-                }
-            }
-
-        }
-
-        #personality-content {
-
-            display: grid;
-            grid-template-columns: 60px auto 60px;
-            grid-template-areas: ". p-content .";
-            margin-bottom: 64px;
-
-            @include md {
-                grid-template-columns: auto 600px auto;
-            }
-
-            @include lg {
-                grid-template-columns: auto 800px auto;
-            }
-
-
-            >div {
-                grid-area: p-content;
-                display: grid;
-                grid-template-columns: 30% auto;
-                grid-template-areas: "h1 h2"
-                    "h1 h2"
-                    "p1 p1"
-                    "p2 p2";
-
-                @include md {
-                    grid-template-columns: 20% auto;
                     grid-template-areas: "h1 h2"
-                        "h1 p1"
-                        ". p1"
-                        ". p2";
-                }
-
-
-                h1 {
-                    grid-area: h1;
-
-                }
-
-
-
-                h2 {
-                    grid-area: h2;
-                    color: $caramel;
-                    font-size: rem-calc(35);
+                        "h1 h2"
+                        "p1 p1"
+                        "p2 p2";
 
                     @include md {
-                        font-size: rem-calc(40);
-                    }
-                }
-
-                p1 {
-                    grid-area: p1;
-                    color: $brown;
-                    font-size: rem-calc(18);
-                    margin-top: 20px;
-
-                    @include md {
-                        font-size: rem-calc(24);
+                        grid-template-columns: 20% auto;
+                        grid-template-areas: "h1 h2"
+                            "h1 p1"
+                            ". p1"
+                            ". p2";
                     }
 
-                    @include lg{
-                        font-size: rem-calc(30);
-                    }
-                }
 
-                p2 {
-                    grid-area: p2;
-                    color: $brown;
-                    font-size: rem-calc(18);
-                    margin-top: 20px;
+                    h1 {
+                        grid-area: h1;
 
-                    @include md {
-                        font-size: rem-calc(24);
                     }
 
-                     @include lg{
-                font-size: rem-calc(30);
-            }
+
+
+                    h2 {
+                        grid-area: h2;
+                        color: $caramel;
+                        font-size: rem-calc(35);
+
+                        @include md {
+                            font-size: rem-calc(40);
+                        }
+                    }
+
+                    p1 {
+                        grid-area: p1;
+                        color: $brown;
+                        font-size: rem-calc(18);
+                        margin-top: 20px;
+
+                        @include md {
+                            font-size: rem-calc(24);
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(30);
+                        }
+                    }
+
+                    p2 {
+                        grid-area: p2;
+                        color: $brown;
+                        font-size: rem-calc(18);
+                        margin-top: 20px;
+
+                        @include md {
+                            font-size: rem-calc(24);
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(30);
+                        }
+                    }
                 }
             }
         }
+
+
+
+
+        // #p-images{
+
+
+        //     .carousel{
+
+
+        //         .carousel__slide {
+        //             background-position: center;
+        //             background-size: cover;
+        //             height: 40vh;
+        //             margin: 0 10px;
+
+        //             @include md{
+        //                 height: 50vh;
+        //             }
+
+        //             @include lg{
+        //                 height: 60vh;
+        //             }
+        //             a:link,a:visited{
+        //                 height: 100%;
+        //                 width: 100%;
+        //                 display: inline-block;
+        //             }
+        //         }
+
+        //         #p-1{
+        //             background-image: url("../img/personality/llamas1.jpg");
+        //         }
+
+        //         #p-2{
+        //             background-image: url("../img/personality/llama2.jpg");
+        //         }
+
+        //         #p-3{
+        //             background-image: url("../img/personality/llama3.jpg");
+        //         }
+
+        //         #p-4{
+        //             background-image: url("../img/personality/llama4.jpg");
+        //         }
+
+        //         #p-5{
+        //             background-image: url("../img/personality/llama5.jpg");
+        //         }
+        //     }
+        // }
+
     }
 
 
-
-
-    // #p-images{
-
-
-    //     .carousel{
-
-
-    //         .carousel__slide {
-    //             background-position: center;
-    //             background-size: cover;
-    //             height: 40vh;
-    //             margin: 0 10px;
-
-    //             @include md{
-    //                 height: 50vh;
-    //             }
-
-    //             @include lg{
-    //                 height: 60vh;
-    //             }
-    //             a:link,a:visited{
-    //                 height: 100%;
-    //                 width: 100%;
-    //                 display: inline-block;
-    //             }
-    //         }
-
-    //         #p-1{
-    //             background-image: url("../img/personality/llamas1.jpg");
-    //         }
-
-    //         #p-2{
-    //             background-image: url("../img/personality/llama2.jpg");
-    //         }
-
-    //         #p-3{
-    //             background-image: url("../img/personality/llama3.jpg");
-    //         }
-
-    //         #p-4{
-    //             background-image: url("../img/personality/llama4.jpg");
-    //         }
-
-    //         #p-5{
-    //             background-image: url("../img/personality/llama5.jpg");
-    //         }
-    //     }
-    // }
-
-    }
-
-   
 }

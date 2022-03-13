@@ -687,7 +687,7 @@ footer > div #subcribe button:hover {
   #personality > div {
     grid-template-columns: auto 1200px auto;
     height: 2100px;
-    margin-top: -120px;
+    margin-top: -125px;
     padding: 150px 0;
   }
 }
@@ -930,12 +930,13 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #maintain {
     grid-template-columns: auto 800px auto;
+    padding: 72px 0;
   }
 }
 @media (min-width: 1024px) {
   #maintain {
     grid-template-columns: auto 1000px auto;
-    padding: 72px 0;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {

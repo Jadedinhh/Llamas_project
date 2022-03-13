@@ -7,11 +7,12 @@
 
     @include md {
         grid-template-columns: auto 800px auto;
+        padding: 72px 0;
     }
 
     @include lg {
         grid-template-columns: auto 1000px auto;
-        padding: 72px 0;
+        padding: 100px 0;
     }
 
     @include xl {
