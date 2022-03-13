@@ -37,6 +37,10 @@
             h1 {
                 grid-area: h1;
 
+                @include md{
+                    margin-left: -40px;
+                }
+
             }
 
             h2 {
@@ -45,13 +49,35 @@
                 font-size: rem-calc(35);
 
                 @include md {
-                    font-size: rem-calc(40);
+                    font-size: rem-calc(48);
                 }
             }
 
 
             #wheat-image {
                 grid-area: image;
+                background-image: url("../img/wheat/wheat.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 300px;
+                border-radius: 10px;
+                margin: 15px 0;
+
+
+                @include md{
+                    height: 500px;
+                    margin: 0 0;
+                }
+
+                @include lg{
+                    height: 600px;
+                }
+
+                @include xl{
+                    height: 450px;
+                }
+
+
             }
 
             p {
@@ -62,10 +88,12 @@
 
                 @include md {
                     font-size: rem-calc(24);
+                  
                 }
 
                 @include lg {
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(30);  
+                    margin-top: 0;
                 }
             }
         }

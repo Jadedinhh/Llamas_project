@@ -1078,6 +1078,11 @@ footer > div #subcribe button:hover {
 #wheat #wheat-content > div h1 {
   grid-area: h1;
 }
+@media (min-width: 768px) {
+  #wheat #wheat-content > div h1 {
+    margin-left: -40px;
+  }
+}
 #wheat #wheat-content > div h2 {
   grid-area: h2;
   color: #AC6737;
@@ -1085,11 +1090,33 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 768px) {
   #wheat #wheat-content > div h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 #wheat #wheat-content > div #wheat-image {
   grid-area: image;
+  background-image: url("../img/wheat/wheat.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+@media (min-width: 768px) {
+  #wheat #wheat-content > div #wheat-image {
+    height: 500px;
+    margin: 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  #wheat #wheat-content > div #wheat-image {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  #wheat #wheat-content > div #wheat-image {
+    height: 450px;
+  }
 }
 #wheat #wheat-content > div p {
   grid-area: p;
@@ -1105,6 +1132,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #wheat #wheat-content > div p {
     font-size: 1.875rem;
+    margin-top: 0;
   }
 }
 
