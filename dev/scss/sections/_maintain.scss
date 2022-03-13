@@ -50,6 +50,10 @@
                 h1 {
                     grid-area: h1;
 
+                    @include lg{
+                        margin-left: 50px;
+                    }
+
 
                 }
 

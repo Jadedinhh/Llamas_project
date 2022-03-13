@@ -46,7 +46,7 @@
                 display: grid;
                 grid-template-areas: " . hero-content . ";
                 grid-template-columns: 40px auto 40px;
-                margin-bottom: 64px;
+                margin: 64px 0;
 
 
 
@@ -71,15 +71,11 @@
                         justify-content: center;
 
                         @include md {
-                            //    font-size: rem-calc(190);
+                       
                             justify-content: flex-end;
                             align-items: center;
                             margin-right: 50px;
                         }
-
-                        //    @include lg{
-                        //        font-size: rem-calc(180);
-                        //    }
                     }
 
                     h2 {
