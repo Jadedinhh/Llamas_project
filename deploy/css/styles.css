@@ -801,6 +801,11 @@ footer > div #subcribe button:hover {
   padding: 64px 0;
   height: 500px;
 }
+@media (min-width: 1024px) {
+  #stickout {
+    padding: 72px 0;
+  }
+}
 #stickout > div {
   grid-area: stickout;
 }
@@ -855,6 +860,12 @@ footer > div #subcribe button:hover {
   #stickout > div #stickout-content > div p {
     font-size: 1.875rem;
   }
+}
+#stickout > div #stickout-content > div #stickout-image {
+  background-image: url("../img/stickout/llama_cutout.png");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
 }
 @media (min-width: 768px) {
   #stickout > div #stickout-content > div #stickout-image {
