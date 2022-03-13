@@ -799,7 +799,6 @@ footer > div #subcribe button:hover {
   grid-template-areas: ". stickout .";
   background-color: #5A433C;
   padding: 64px 0;
-  height: 500px;
 }
 @media (min-width: 1024px) {
   #stickout {
@@ -809,6 +808,14 @@ footer > div #subcribe button:hover {
 #stickout > div {
   grid-area: stickout;
 }
+@media (min-width: 768px) {
+  #stickout > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "S-content s-image";
+    gap: 60px;
+  }
+}
 #stickout > div #stickout-content > div {
   display: grid;
   grid-template-columns: 25% auto;
@@ -816,8 +823,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 768px) {
   #stickout > div #stickout-content > div {
-    grid-template-columns: 10% 40% auto;
-    grid-template-areas: "h1 h2 s-image" "h1 p s-image";
+    grid-area: S-content;
   }
 }
 #stickout > div #stickout-content > div h1 {
@@ -861,15 +867,24 @@ footer > div #subcribe button:hover {
     font-size: 1.875rem;
   }
 }
-#stickout > div #stickout-content > div #stickout-image {
+#stickout > div #stickout-image {
   background-image: url("../img/stickout/llama_cutout.png");
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 550px;
+  margin-top: 15px;
+}
+#stickout > div #stickout-image img {
+  display: none;
 }
 @media (min-width: 768px) {
-  #stickout > div #stickout-content > div #stickout-image {
+  #stickout > div #stickout-image {
     grid-area: s-image;
+    background-image: none;
+  }
+  #stickout > div #stickout-image img {
+    display: grid;
+    margin-top: -250px;
   }
 }
 
@@ -887,6 +902,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #maintain {
     grid-template-columns: auto 1000px auto;
+    padding: 72px 0;
   }
 }
 @media (min-width: 1200px) {

@@ -5,7 +5,7 @@
     grid-template-areas: ". stickout .";
     background-color: $brown;
     padding: 64px 0;
-    height: 500px;
+
 
     @include lg {
         padding: 72px 0;
@@ -13,6 +13,13 @@
 
     >div {
         grid-area: stickout;
+
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "S-content s-image";
+            gap: 60px;
+        }
 
         #stickout-content {
 
@@ -23,12 +30,13 @@
                 grid-template-areas: "h1 h2"
                     "h1 p";
 
-
                 @include md {
-                    grid-template-columns: 10% 40% auto;
-                    grid-template-areas: "h1 h2 s-image"
-                        "h1 p s-image";
+                    grid-area: S-content;
                 }
+
+
+
+
 
                 h1 {
                     grid-area: h1;
@@ -73,15 +81,32 @@
                     }
                 }
 
-                #stickout-image {
-                    background-image: url("../img/stickout/llama_cutout.png");
-                    background-position: center;
-                    background-size: cover;
-                    height: 500px;
 
-                    @include md {
-                        grid-area: s-image;
-                    }
+            }
+        }
+
+        #stickout-image {
+            img {
+                display: none;
+            }
+
+            background-image: url("../img/stickout/llama_cutout.png");
+            background-position: center;
+            background-size: cover;
+            height: 550px;
+            margin-top: 15px;
+
+            @include md {
+                grid-area: s-image;
+                // height: 200px;
+                // margin-left: 15px;
+                // width: ;
+
+                background-image: none;
+
+                img {
+                    display: grid;
+                    margin-top: -250px;
                 }
             }
         }

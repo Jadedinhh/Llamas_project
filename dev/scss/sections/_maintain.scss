@@ -11,6 +11,7 @@
 
     @include lg {
         grid-template-columns: auto 1000px auto;
+        padding: 72px 0;
     }
 
     @include xl {
