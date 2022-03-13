@@ -1,6 +1,6 @@
 #along {
     padding: 64px 0;
-    background-image: linear-gradient($tan, $blue) ;
+    background-image: linear-gradient($tan, $blue);
 
     @include lg {
         display: grid;
@@ -30,8 +30,22 @@
                 "p2 p2"
             ;
 
+            @include md {
+                grid-template-columns: 10% 40% auto auto;
+                grid-template-areas: "h1 h2 . ."
+                    "image image image image"
+                    "p1 p1 p1 p1"
+                    "p2 p2 p2 p2"
+                ;
+            }
+
             h1 {
                 grid-area: h1;
+
+                @include lg{
+                    margin-left: -30px;
+                  
+                }
             }
 
 
@@ -40,14 +54,34 @@
                 grid-area: h2;
                 color: $caramel;
                 font-size: rem-calc(35);
+                margin-left: -20px;
 
                 @include md {
                     font-size: rem-calc(40);
+                    margin-left: 15px;
+                }
+
+                @include lg{
+                    color: $tan;
+                    margin-top: 30px;
+                  
+                    
                 }
             }
 
             #along-image {
                 grid-area: image;
+                background-image: url("../img/along/along.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 300px;
+                border-radius: 15px;
+                margin: 15px 0;
+
+                @include lg {
+                    margin-top: -100px;
+                    height: 600px;
+                }
             }
 
             p1 {
@@ -60,6 +94,14 @@
                 @include md {
                     font-size: rem-calc(38);
                 }
+
+                @include lg{
+                    margin: 15px 60px;
+                }
+
+                @include xl{
+                    margin: 15px 80px;
+                }
             }
 
             p2 {
@@ -70,6 +112,14 @@
 
                 @include md {
                     font-size: rem-calc(24);
+                }
+
+                @include lg{
+                    margin: 15px 60px;
+                }
+
+                @include xl{
+                    margin: 15px 80px;
                 }
             }
         }

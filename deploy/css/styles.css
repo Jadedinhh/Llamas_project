@@ -363,6 +363,13 @@ body .circle {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  body .circle {
+    font-size: 5rem;
+    width: 120px;
+    height: 120px;
+  }
+}
 
 /* =============
     Typography
@@ -553,6 +560,7 @@ footer > div {
 }
 footer > div h1 {
   color: #FFF5EB;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   footer > div h1 {
@@ -841,6 +849,13 @@ footer > div #subcribe button:hover {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  #stickout > div #stickout-content > div .circle {
+    font-size: 5rem;
+    width: 120px;
+    height: 120px;
+  }
+}
 #stickout > div #stickout-content > div h2 {
   grid-area: h2;
   font-size: 2.1875rem;
@@ -1080,17 +1095,24 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 768px) {
   #wheat #wheat-content > div h1 {
-    margin-left: -40px;
+    margin-left: -50px;
   }
 }
 #wheat #wheat-content > div h2 {
   grid-area: h2;
   color: #AC6737;
   font-size: 2.1875rem;
+  margin-left: -20px;
 }
 @media (min-width: 768px) {
   #wheat #wheat-content > div h2 {
     font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  #wheat #wheat-content > div h2 {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 #wheat #wheat-content > div #wheat-image {
@@ -1099,7 +1121,7 @@ footer > div #subcribe button:hover {
   background-position: center;
   background-size: cover;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 15px 0;
 }
 @media (min-width: 768px) {
@@ -1110,7 +1132,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #wheat #wheat-content > div #wheat-image {
-    height: 600px;
+    height: 800px;
   }
 }
 @media (min-width: 1200px) {
@@ -1165,21 +1187,52 @@ footer > div #subcribe button:hover {
   grid-template-columns: 30% auto;
   grid-template-areas: "h1 h2" "image image" "p1 p1" "p2 p2";
 }
+@media (min-width: 768px) {
+  #along #along-content > div {
+    grid-template-columns: 10% 40% auto auto;
+    grid-template-areas: "h1 h2 . ." "image image image image" "p1 p1 p1 p1" "p2 p2 p2 p2";
+  }
+}
 #along #along-content > div h1 {
   grid-area: h1;
+}
+@media (min-width: 1024px) {
+  #along #along-content > div h1 {
+    margin-left: -30px;
+  }
 }
 #along #along-content > div h2 {
   grid-area: h2;
   color: #AC6737;
   font-size: 2.1875rem;
+  margin-left: -20px;
 }
 @media (min-width: 768px) {
   #along #along-content > div h2 {
     font-size: 2.5rem;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  #along #along-content > div h2 {
+    color: #FFF5EB;
+    margin-top: 30px;
   }
 }
 #along #along-content > div #along-image {
   grid-area: image;
+  background-image: url("../img/along/along.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+@media (min-width: 1024px) {
+  #along #along-content > div #along-image {
+    margin-top: -100px;
+    height: 600px;
+  }
 }
 #along #along-content > div p1 {
   grid-area: p1;
@@ -1193,6 +1246,16 @@ footer > div #subcribe button:hover {
     font-size: 2.375rem;
   }
 }
+@media (min-width: 1024px) {
+  #along #along-content > div p1 {
+    margin: 15px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #along #along-content > div p1 {
+    margin: 15px 80px;
+  }
+}
 #along #along-content > div p2 {
   grid-area: p2;
   color: #5A433C;
@@ -1202,5 +1265,15 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #along #along-content > div p2 {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #along #along-content > div p2 {
+    margin: 15px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #along #along-content > div p2 {
+    margin: 15px 80px;
   }
 }
