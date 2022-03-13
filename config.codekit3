@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/along\/along.jpg" : {
+      "ft" : 16384,
+      "iS" : 871319,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/along\/along.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/llamas_hero.jpg" : {
       "ft" : 16384,
       "iS" : 188945,
@@ -105,6 +118,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/personality\/llamas1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/stickout\/llama_cutout.png" : {
+      "ft" : 32768,
+      "iS" : 192219,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/stickout\/llama_cutout.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/wheat\/wheat (1).jpg" : {
+      "ft" : 16384,
+      "iS" : 83709,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/wheat\/wheat (1).jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
