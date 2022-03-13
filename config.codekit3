@@ -60,6 +60,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/personality\/fur.png" : {
+      "ft" : 32768,
+      "iS" : 1258580,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/personality\/fur.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/personality\/furwithgradient.png" : {
+      "ft" : 32768,
+      "iS" : 2279679,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/personality\/furwithgradient.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/personality\/llama2.jpg" : {
       "ft" : 16384,
       "iS" : 145345,
