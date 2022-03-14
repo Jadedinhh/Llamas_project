@@ -881,6 +881,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #stickout > div #stickout-content > div h2 {
     font-size: 2.5rem;
+    margin-left: 40px;
   }
 }
 #stickout > div #stickout-content > div p {
@@ -892,6 +893,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #stickout > div #stickout-content > div p {
     font-size: 1.5rem;
+    margin-left: 40px;
   }
 }
 @media (min-width: 1024px) {
