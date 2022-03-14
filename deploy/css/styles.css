@@ -826,6 +826,11 @@ footer > div #subcribe button:hover {
   background-color: #5A433C;
   padding: 64px 0;
 }
+@media (min-width: 768px) {
+  #stickout {
+    margin-top: -5px;
+  }
+}
 @media (min-width: 1024px) {
   #stickout {
     padding: 72px 0;
