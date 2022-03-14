@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: 40px auto 40px;
     grid-template-areas: ". maintain .";
+    background-image: linear-gradient($tan1, $tan1), url("../img/maintain/maintain.jpg");
+    background-position: center;
+    background-size: cover;
 
 
     @include md {
@@ -30,6 +33,11 @@
             margin-bottom: 40px;
 
 
+            @include md {
+                margin-bottom: 80px;
+            }
+
+
             >div {
 
                 display: grid;
@@ -50,8 +58,12 @@
                 h1 {
                     grid-area: h1;
 
-                    @include lg{
+                    @include md {
                         margin-left: 50px;
+                    }
+
+                    @include lg {
+                        margin-left: 80px;
                     }
 
 
@@ -91,9 +103,13 @@
 
 
             >div {
+                display: grid;
+                grid-template-areas: "s-right"
+                    "s-left";
+
 
                 @include md {
-                    display: grid;
+
                     grid-template-columns: 40% 60%;
                     grid-template-areas: "s-left s-right";
                 }
@@ -103,16 +119,23 @@
 
                     display: grid;
                     grid-template-columns: 40px auto 40px;
-                    grid-template-areas: ".sheering-left .";
-                    padding: 40px 0;
+                    grid-template-areas: ". sheering-left .";
+                    padding: 45px 0;
                     background-color: $tan;
-                    // border-radius: 10px;
+                    border-radius: 0 0 15px 15px;
+                    grid-area: s-left;
 
 
                     @include md {
-                        grid-area: s-left;
-                        padding-top: 100px;
-                        
+                        border-radius: 15px 0 0 15px;
+                        padding-top: 60px;
+
+                    }
+
+                    @include lg {
+
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     >div {
@@ -123,7 +146,7 @@
                             font-size: rem-calc(16);
                             margin-bottom: 15px;
 
-                            @include lg{
+                            @include lg {
                                 font-size: rem-calac(19);
                             }
                         }
@@ -132,12 +155,12 @@
                             color: $brown;
                             font-size: rem-calc(24);
                             margin-bottom: 15px;
-                            
 
-                            @include xl{
+
+                            @include xl {
                                 font-size: rem-calc(30);
                             }
-                            
+
                         }
 
                         p {
@@ -145,7 +168,7 @@
                             font-size: rem-calc(18);
                             margin-bottom: 15px;
 
-                            @include xl{
+                            @include xl {
                                 font-size: rem-calc(24);
                             }
                         }
@@ -159,14 +182,16 @@
                             font-weight: 500;
                             height: 60px;
 
-                            @include lg{
-                                
-                            }
+
 
                             &:hover {
                                 background-color: $caramel;
                                 color: $blue;
                                 cursor: pointer;
+                            }
+
+                            @include lg {
+                                margin-top: 20px;
                             }
                         }
                     }
@@ -179,9 +204,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    grid-area: s-right;
+                    border-radius: 10px 10px 0 0;
 
                     @include md {
-                        grid-area: s-right;
+                        border-radius: 0 15px 15px 0;
                         height: 400px;
                     }
 
