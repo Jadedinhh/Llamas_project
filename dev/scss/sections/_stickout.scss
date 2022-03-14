@@ -63,6 +63,10 @@
                         height: 120px;
                     }
 
+                    @include xl{
+                        margin-left: 40px;
+                    }
+
                 }
 
                 h2 {
@@ -75,9 +79,9 @@
                         margin-left: 40px;
                     }
 
-                    // @include lg{
-
-                    // }
+                    @include xl{
+                        margin-left: 0;
+                    }
                 }
 
                 p {
@@ -94,6 +98,10 @@
                     @include lg {
                         font-size: rem-calc(30);
 
+                    }
+
+                    @include xl{
+                        margin-left: 0;
                     }
                 }
 
@@ -114,9 +122,6 @@
 
             @include md {
                 grid-area: s-image;
-                // height: 200px;
-                // margin-left: 15px;
-                // width: ;
 
                 background-image: none;
 
