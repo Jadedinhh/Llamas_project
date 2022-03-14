@@ -6,6 +6,7 @@
     background-color: $brown;
     padding: 64px 0;
     height: 500px;
+   
 
     >div {
         grid-area: stickout;
@@ -70,26 +71,36 @@
                 }
 
                 #stickout-img{
+
                    
                     background-image: url("../img/stickout/llama_cutout.png");
-                     height: 300px;
-                    background-size: cover;
-                    display: flex;
-                    justify-content: center;
                     align-items: center;
+                    background-position: center;
+                    background-size: cover;
+                    min-width: 100% !important;
+                    height: 600px !important;
+                    border-radius: 40px;
+                    grid-area: s-image;
+                   
+                    // background-image: url('../img/stickout/llama_cutout.png');
+                    //  max-height: 300px;
+                    // background-size: cover;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
                     
 
-                    @include md {
-                        display: grid;
-                        grid-area: image;
-                        background-image: url("../img/stickout/llama_cutout.png");
-                        height: 300px;
-                        background-size: cover;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    // @include md {
+                    //     display: grid;
+                    //     grid-area: image;
+                    //     background-image: url("../img/stickout/llama_cutout.png");
+                    //     height: 300px;
+                    //     background-size: cover;
+                    //     display: flex;
+                    //     justify-content: center;
+                    //     align-items: center;
 
-                    }
+                    // }
 
                    
 

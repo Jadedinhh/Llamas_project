@@ -857,23 +857,13 @@ footer > div #subcribe button:hover {
 }
 #stickout > div #stickout-content > div #stickout-img {
   background-image: url("../img/stickout/llama_cutout.png");
-  height: 300px;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  #stickout > div #stickout-content > div #stickout-img {
-    display: grid;
-    grid-area: image;
-    background-image: url("../img/stickout/llama_cutout.png");
-    height: 300px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-position: center;
+  background-size: cover;
+  min-width: 100% !important;
+  height: 600px !important;
+  border-radius: 40px;
+  grid-area: s-image;
 }
 
 #maintain {
