@@ -2,11 +2,15 @@
     padding: 64px 0;
     background-image: linear-gradient($tan, $blue);
 
+    @include md{
+        padding: 72px;
+    }
+
     @include lg {
         display: grid;
         grid-template-columns: auto 1000px auto;
         grid-template-areas: ". along .";
-        padding: 72px 0;
+        padding: 100px 0;
     }
 
     @include xl {
@@ -58,12 +62,13 @@
 
                 @include md {
                     font-size: rem-calc(40);
-                    margin-left: 15px;
+                    margin-left: 25px;
                 }
 
                 @include lg{
                     color: $tan;
                     margin-top: 30px;
+                    margin-left: 15px;
                   
                     
                 }
@@ -96,7 +101,7 @@
                 }
 
                 @include lg{
-                    margin: 15px 60px;
+                    margin: 15px 90px;
                 }
 
                 @include xl{

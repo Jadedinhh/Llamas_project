@@ -1236,12 +1236,17 @@ footer > div #subcribe button:hover {
   padding: 64px 0;
   background-image: linear-gradient(#FFF5EB, #ABCEF4);
 }
+@media (min-width: 768px) {
+  #along {
+    padding: 72px;
+  }
+}
 @media (min-width: 1024px) {
   #along {
     display: grid;
     grid-template-columns: auto 1000px auto;
     grid-template-areas: ". along .";
-    padding: 72px 0;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1284,13 +1289,14 @@ footer > div #subcribe button:hover {
 @media (min-width: 768px) {
   #along #along-content > div h2 {
     font-size: 2.5rem;
-    margin-left: 15px;
+    margin-left: 25px;
   }
 }
 @media (min-width: 1024px) {
   #along #along-content > div h2 {
     color: #FFF5EB;
     margin-top: 30px;
+    margin-left: 15px;
   }
 }
 #along #along-content > div #along-image {
@@ -1322,7 +1328,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #along #along-content > div p1 {
-    margin: 15px 60px;
+    margin: 15px 90px;
   }
 }
 @media (min-width: 1200px) {
