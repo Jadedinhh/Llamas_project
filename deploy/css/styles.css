@@ -1047,6 +1047,7 @@ footer > div #subcribe button:hover {
   background-color: #FFF5EB;
   border-radius: 0 0 15px 15px;
   grid-area: s-left;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   #maintain > div #sheering > div #sheering-left {
@@ -1120,12 +1121,14 @@ footer > div #subcribe button:hover {
   justify-content: center;
   align-items: center;
   grid-area: s-right;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   #maintain > div #sheering > div #sheering-right {
     border-radius: 0 15px 15px 0;
     height: 400px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 @media (min-width: 1024px) {

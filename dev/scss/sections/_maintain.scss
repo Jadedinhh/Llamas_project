@@ -99,13 +99,16 @@
 
         #sheering {
 
-
+ 
 
 
             >div {
+
                 display: grid;
                 grid-template-areas: "s-right"
                     "s-left";
+              
+              
 
 
                 @include md {
@@ -124,6 +127,9 @@
                     background-color: $tan;
                     border-radius: 0 0 15px 15px;
                     grid-area: s-left;
+                   
+                    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 
                     @include md {
@@ -205,11 +211,15 @@
                     justify-content: center;
                     align-items: center;
                     grid-area: s-right;
-                    border-radius: 10px 10px 0 0;
+                    border-radius: 15px 15px 0 0;
+                    box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2);
+                 
 
                     @include md {
                         border-radius: 0 15px 15px 0;
                         height: 400px;
+                        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+
                     }
 
                     @include lg {
