@@ -574,7 +574,7 @@ footer > div h5 {
   font-weight: 200;
   font-size: 1.125rem;
   color: #FFF5EB;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 footer > div #socials {
   grid-area: socials;
@@ -1388,12 +1388,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #along #along-content > div p1 {
-    margin: 15px 90px;
-  }
-}
-@media (min-width: 1200px) {
-  #along #along-content > div p1 {
-    margin: 15px 80px;
+    margin: 50px;
   }
 }
 #along #along-content > div p2 {
@@ -1409,11 +1404,6 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #along #along-content > div p2 {
-    margin: 60px 15px;
-  }
-}
-@media (min-width: 1200px) {
-  #along #along-content > div p2 {
-    margin: 15px 80px;
+    margin: 0 50px 0px 50px;
   }
 }
