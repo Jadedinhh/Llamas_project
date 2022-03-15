@@ -533,7 +533,7 @@ ul li {
 ============= */
 footer {
   background-color: #5A433C;
-  padding: 40px 0;
+  padding: 64px 0;
   display: grid;
   grid-template-areas: ". footer .";
   grid-template-columns: 45px auto 45px;
@@ -541,6 +541,7 @@ footer {
 @media (min-width: 1024px) {
   footer {
     grid-template-columns: auto 1000px auto;
+    padding: 130px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -892,7 +893,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #stickout {
-    padding: 72px 0;
+    padding: 100px 0;
   }
 }
 #stickout > div {
@@ -997,7 +998,7 @@ footer > div #subcribe button:hover {
   }
   #stickout > div #stickout-image img {
     display: grid;
-    margin-top: -250px;
+    margin-top: -280px;
   }
 }
 
@@ -1019,7 +1020,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #maintain {
     grid-template-columns: auto 1000px auto;
-    padding: 100px 0;
+    padding: 130px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1206,7 +1207,7 @@ footer > div #subcribe button:hover {
 @media (min-width: 1024px) {
   #wheat {
     grid-template-columns: auto 1000px auto;
-    padding: 72px 0;
+    padding: 130px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1305,7 +1306,7 @@ footer > div #subcribe button:hover {
     display: grid;
     grid-template-columns: auto 1000px auto;
     grid-template-areas: ". along .";
-    padding: 100px 0;
+    padding: 130px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1408,7 +1409,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1024px) {
   #along #along-content > div p2 {
-    margin: 15px 60px;
+    margin: 60px 15px;
   }
 }
 @media (min-width: 1200px) {
