@@ -818,6 +818,52 @@ footer > div #subcribe button:hover {
     font-size: 1.875rem;
   }
 }
+#personality > div > div #p-images .carousel {
+  --carousel-button-bg: #fff;
+  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+#personality > div > div #p-images .carousel .carousel__slide {
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin: 0 10px;
+}
+@media (min-width: 768px) {
+  #personality > div > div #p-images .carousel .carousel__slide {
+    height: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  #personality > div > div #p-images .carousel .carousel__slide {
+    height: 60vh;
+  }
+}
+#personality > div > div #p-images .carousel .carousel__slide a:link, #personality > div > div #p-images .carousel .carousel__slide a:visited {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+#personality > div > div #p-images .carousel #p-1 {
+  background-image: url("../img/personality/yellowllama.jpg");
+}
+#personality > div > div #p-images .carousel #p-2 {
+  background-image: url("../img/personality/llama1.jpg");
+}
+#personality > div > div #p-images .carousel #p-3 {
+  background-image: url("../img/personality/llama2.jpg");
+}
+#personality > div > div #p-images .carousel #p-4 {
+  background-image: url("../img/personality/llama3.jpg");
+}
+#personality > div > div #p-images .carousel #p-5 {
+  background-image: url("../img/personality/llama4.jpg");
+}
+#personality > div > div #p-images .carousel #p-6 {
+  background-image: url("../img/personality/llama5.jpg");
+}
 
 #stickout {
   display: grid;
