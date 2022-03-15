@@ -837,6 +837,7 @@ footer > div #subcribe button:hover {
   background-size: cover;
   height: 40vh;
   margin: 0 10px;
+  border-radius: 30px;
 }
 @media (min-width: 768px) {
   #personality > div #p-images .carousel .carousel__slide {
