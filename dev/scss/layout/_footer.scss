@@ -48,7 +48,7 @@ footer {
             font-weight: 200;
             font-size: rem-calc(18);
             color: $tan;
-            margin: 10px 0;
+            margin: 15px 0;
         }
 
         #socials {
@@ -62,8 +62,10 @@ footer {
 
             @include md{
                 justify-content: flex-start;
+               
             }
 
+            
 
                 li {
                     margin: 0 40px;
