@@ -11,6 +11,11 @@
 
         height: 700px;
 
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". personality ."
+            ". p-images .";
+
         @include md {
             height: 1000px;
             margin-top: -60px;
@@ -19,9 +24,7 @@
 
 
         @include lg {
-            display: grid;
             grid-template-columns: auto 1000px auto;
-            grid-template-areas: ". personality .";
             height: 1600px;
             margin-top: -90px;
             padding: 100px 0;
@@ -71,7 +74,7 @@
                         justify-content: center;
 
                         @include md {
-                       
+
                             justify-content: flex-end;
                             align-items: center;
                             margin-right: 50px;
@@ -181,22 +184,27 @@
                         }
                     }
                 }
-            } 
-            
-            
-            
-            #p-images{
+            }
 
 
-            .carousel{
-                
+
+
+
+
+        }
+
+        #p-images {
+            grid-area: p-images;
+
+            .carousel {
+
                 --carousel-button-bg: #fff;
                 --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
-    
+
                 --carousel-button-svg-width: 20px;
                 --carousel-button-svg-height: 20px;
                 --carousel-button-svg-stroke-width: 2.5;
-    
+
 
                 .carousel__slide {
                     background-position: center;
@@ -204,41 +212,43 @@
                     height: 40vh;
                     margin: 0 10px;
 
-                    @include md{
+                    @include md {
                         height: 50vh;
                     }
 
-                    @include lg{
+                    @include lg {
                         height: 60vh;
                     }
-                    a:link,a:visited{
+
+                    a:link,
+                    a:visited {
                         height: 100%;
                         width: 100%;
                         display: inline-block;
                     }
                 }
 
-                #p-1{
+                #p-1 {
                     background-image: url("../img/personality/yellowllama.jpg");
                 }
 
-                #p-2{
+                #p-2 {
                     background-image: url("../img/personality/llama1.jpg");
                 }
 
-                #p-3{
+                #p-3 {
                     background-image: url("../img/personality/llama2.jpg");
                 }
 
-                #p-4{
+                #p-4 {
                     background-image: url("../img/personality/llama3.jpg");
                 }
 
-                #p-5{
+                #p-5 {
                     background-image: url("../img/personality/llama4.jpg");
                 }
 
-                #p-6{
+                #p-6 {
                     background-image: url("../img/personality/llama5.jpg");
                 }
             }
@@ -246,12 +256,8 @@
 
 
 
-        }
 
 
-
-
-       
 
     }
 
