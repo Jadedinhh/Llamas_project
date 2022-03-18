@@ -1,5 +1,8 @@
 import {Carousel} from "@fancyapps/ui";
 import {scrollPage } from "./pageScroll"
+import { burgerTL } from "./burgerAnimation";
+import { displayWindowSize } from "./mobileResizing"
+import { menuAnimator } from "./mobileMenu"
 
 window.addEventListener('load', function(){
 
@@ -10,11 +13,33 @@ window.addEventListener('load', function(){
 
 });
 
+
+
+var burgerButton = document.querySelector("#burger");
+
+let burgerClicked = false;
+
+   
+function openCloseMenu(){
+   if(burgerClicked === false){
+     burgerTL.play();
+     menuAnimator.play();
+     burgerClicked = true;
+ }else{
+     burgerTL.reverse();
+     menuAnimator.reverse();
+     burgerClicked = false;
+   } 
+}
+
+
+burgerButton.addEventListener("click", openCloseMenu);
+
 let navButtons = document.querySelectorAll(".nav-btns");
 
 for(const button of navButtons){
     button.addEventListener("click", checkScrolling);
-    console.log("thisnotwork")
+    button.addEventListener("click", openCloseMenu);
 }
 
 
@@ -23,9 +48,21 @@ function checkScrolling(e) {
     
     if (indexValue != -1){
         scrollPage(indexValue -1);
-        console.log("thisworks")
     }
 }
+
+window.addEventListener("resize", function(){
+    if(burgerClicked === true){
+        console.log("fire");
+        openCloseMenu();
+    }
+});
+
+
+window.addEventListener("resize", displayWindowSize);
+
+window.addEventListener('load', displayWindowSize);
+
 
 
 

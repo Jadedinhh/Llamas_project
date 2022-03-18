@@ -424,20 +424,17 @@ ul li {
 #nav-container ul li {
   padding-top: 10px;
 }
-#nav-container ul li a:link,
-#nav-container ul li a:visited {
+#nav-container ul li button {
   color: #AC6737;
   font-size: 1rem;
   font-family: "Fredoka One", cursive;
   transition: 0.25s;
 }
-#nav-container ul li a:link:hover,
-#nav-container ul li a:visited:hover {
+#nav-container ul li button:hover {
   color: #5A433C;
 }
 @media (min-width: 1024px) {
-  #nav-container ul li a:link,
-#nav-container ul li a:visited {
+  #nav-container ul li button {
     font-size: 1.25rem;
   }
 }
@@ -492,44 +489,41 @@ ul li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 15px;
 }
 #header > div aside #burger-container {
   cursor: pointer;
-  width: 40px;
-  position: absolute;
-  height: 10px;
+  position: relative;
   grid-area: burger;
+  height: 50px;
+  width: 50px;
 }
 @media (min-width: 1024px) {
   #header > div aside #burger-container {
     display: none !important;
   }
 }
-#header > div aside #burger-container div span {
-  width: 100%;
-  background-color: #AC6737;
-  margin-top: 20px;
-  height: 6px;
+#header > div aside #burger-container #burger {
   position: absolute;
-  top: 50;
-  right: 0;
-  width: 100%;
-  border-radius: 10px;
-}
-#header > div aside #burger-container div span:nth-child(2) {
-  top: 16px;
-  width: 100%;
-}
-#header > div aside #burger-container div span:nth-child(3) {
-  top: 32px;
-  width: 100%;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
 }
 #header > div #nav-container {
   grid-area: nav;
+  background-color: #FFF5EB;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500;
+  position: fixed;
 }
 @media (min-width: 1024px) {
   #header > div #nav-container {
     display: block !important;
+    background-color: transparent;
+    position: static;
+    height: 100%;
+    width: 100%;
   }
 }
 

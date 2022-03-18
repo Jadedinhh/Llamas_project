@@ -55,53 +55,55 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            
+            // width: 100%;  
+            padding: 15px;
+            // padding-right: 30px;
+
+
             #burger-container {
-            cursor: pointer;
-            width: 40px;
-            position: absolute;
-            height: 10px;
-            
-            grid-area: burger;
 
 
-            @include lg {
-                display: none !important;
-            }
 
-            div {
-            
-                span {
-                    width: 100%;
-                    background-color: $caramel;
-                    margin-top: 20px;
-                    height: 6px;
-                    position: absolute;
-                    top: 50;
-                    right: 0;
-                    width: 100%;
-                    border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+                grid-area: burger;
+                height: 50px;
+                width: 50px;
 
-                    &:nth-child(2) {
-                        top: 16px;
-                        width: 100%;
-                    }
 
-                    &:nth-child(3) {
-                        top: 32px;
-                        width: 100%;
-                    }
+
+                @include lg {
+                    display: none !important;
                 }
+
+                #burger {
+                    position: absolute;
+                    z-index: 1000;
+                    height: 50px;
+                    width: 50px;
+                }
+
+
             }
-        }
         }
 
         
 
         #nav-container {
             grid-area: nav;
+            background-color: $tan;
+            width: 100vw;
+            height: 100vh;
+            z-index: 500;
+            // text-align: center;
+position: fixed;
+
              @include lg{
                  display: block !important;
+                 background-color: transparent;
+                 position: static;
+                 height: 100%;
+                    width: 100%;
              }
 
             
