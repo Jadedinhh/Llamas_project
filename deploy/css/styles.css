@@ -525,7 +525,7 @@ ul li {
   background-color: #FFF5EB;
   width: 100vw;
   height: 100vh;
-  z-index: -400;
+  z-index: -1800;
   position: fixed;
 }
 @media (min-width: 1024px) {
@@ -535,6 +535,9 @@ ul li {
     position: static;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
