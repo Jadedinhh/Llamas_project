@@ -9,6 +9,6 @@
   "private": true,
   "dependencies": {
     "@fancyapps/ui": "^4.0.26",
-    "gsap": "^3.9.1"
+    "gsap": "file:gsap-bonus.tgz"
   }
 }

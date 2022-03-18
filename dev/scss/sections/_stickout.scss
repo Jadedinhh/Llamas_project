@@ -64,7 +64,7 @@
                     }
 
                     @include xl{
-                        margin-left: 40px;
+                        margin-left: 15px;
                     }
 
                 }
@@ -97,6 +97,7 @@
 
                     @include lg {
                         font-size: rem-calc(30);
+                     
 
                     }
 

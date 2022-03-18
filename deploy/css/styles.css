@@ -823,6 +823,7 @@ footer > div #subcribe button:hover {
 }
 #personality > div #p-images {
   grid-area: p-images;
+  overflow-y: hidden;
 }
 #personality > div #p-images .carousel {
   color: #AC6737;
@@ -941,7 +942,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1200px) {
   #stickout > div #stickout-content > div .circle {
-    margin-left: 40px;
+    margin-left: 15px;
   }
 }
 #stickout > div #stickout-content > div h2 {

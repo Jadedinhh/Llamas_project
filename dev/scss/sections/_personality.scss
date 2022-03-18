@@ -196,6 +196,7 @@
 
         #p-images {
             grid-area: p-images;
+            overflow-y: hidden;
 
             .carousel {
 

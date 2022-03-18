@@ -1,4 +1,5 @@
 import {Carousel} from "@fancyapps/ui";
+import {scrollPage } from "./pageScroll"
 
 window.addEventListener('load', function(){
 
@@ -8,6 +9,21 @@ window.addEventListener('load', function(){
       });
 
 });
+
+let navButtons = document.querySelectorAll(".nav-btns");
+
+for(const button of navButtons){
+    button.addEventListener("click", checkScrolling);
+}
+
+
+function checkScrolling(e) {
+    const indexValue = [].indexOf.call(navButtons, e.target)
+    
+    if (indexValue != -1){
+        scrollPage(indexValue -1);
+    }
+}
 
 
 
