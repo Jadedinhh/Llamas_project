@@ -942,7 +942,7 @@ footer > div #subcribe button:hover {
 }
 @media (min-width: 1200px) {
   #stickout > div #stickout-content > div .circle {
-    margin-left: 15px;
+    margin-left: 10px;
   }
 }
 #stickout > div #stickout-content > div h2 {

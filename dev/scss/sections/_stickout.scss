@@ -57,14 +57,17 @@
                     align-items: center;
                     justify-content: center;
 
+
+
                     @include lg {
                         font-size: rem-calc(80);
                         width: 120px;
                         height: 120px;
+                      
                     }
 
                     @include xl{
-                        margin-left: 15px;
+                        margin-left: 10px;
                     }
 
                 }
