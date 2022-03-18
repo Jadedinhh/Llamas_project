@@ -429,6 +429,9 @@ ul li {
     align-items: center;
   }
 }
+#nav-container ul li {
+  padding: 10px;
+}
 #nav-container ul li button {
   color: #AC6737;
   font-size: 1.875rem;

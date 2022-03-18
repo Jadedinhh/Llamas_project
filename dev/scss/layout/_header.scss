@@ -9,6 +9,10 @@
     left: 0;
     position: fixed;
 
+    // @include lg{
+    //     padding-top: 20px;
+    // }
+
 
     >div {
 
@@ -57,6 +61,8 @@
             // width: 100%;  
             padding: 15px;
             // padding-right: 30px;
+
+           
 
 
             #burger-container {
