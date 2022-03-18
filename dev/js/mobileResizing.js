@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 
     if(document.documentElement.clientWidth <= 1024){
         console.log("hide");
-        gsap.set("#nav-container", {y: -menuWidth});
+        gsap.set("#nav-container", {y: menuWidth});
     }else{
         console.log("un-hide");
         gsap.set("#nav-container",{y:0});

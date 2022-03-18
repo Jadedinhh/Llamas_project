@@ -429,9 +429,6 @@ ul li {
     align-items: center;
   }
 }
-#nav-container ul li {
-  padding-top: 10px;
-}
 #nav-container ul li button {
   color: #AC6737;
   font-size: 1.875rem;
@@ -458,10 +455,6 @@ ul li {
   top: 0;
   width: 100%;
   left: 0;
-  padding: 20px 0;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
   position: fixed;
 }
 #header > div {
@@ -478,6 +471,10 @@ ul li {
 }
 #header > div #logo-container {
   grid-area: logo;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
 }
 #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
@@ -525,7 +522,7 @@ ul li {
   background-color: #FFF5EB;
   width: 100vw;
   height: 100vh;
-  z-index: 500;
+  z-index: -400;
   position: fixed;
 }
 @media (min-width: 1024px) {
