@@ -14,16 +14,16 @@ let navButtons = document.querySelectorAll(".nav-btns");
 
 for(const button of navButtons){
     button.addEventListener("click", checkScrolling);
-    con
+    console.log("thisnotwork")
 }
 
 
 function checkScrolling(e) {
     const indexValue = [].indexOf.call(navButtons, e.target)
     
-    if (indexValue != 0){
-        scrollPage(indexValue);
-        console.log(thisworks)
+    if (indexValue != -1){
+        scrollPage(indexValue -1);
+        console.log("thisworks")
     }
 }
 
