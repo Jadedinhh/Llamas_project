@@ -488,7 +488,12 @@ ul li {
     font-size: 2.25rem;
   }
 }
-#header > div #burger-container {
+#header > div aside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#header > div aside #burger-container {
   cursor: pointer;
   width: 40px;
   position: absolute;
@@ -496,11 +501,11 @@ ul li {
   grid-area: burger;
 }
 @media (min-width: 1024px) {
-  #header > div #burger-container {
+  #header > div aside #burger-container {
     display: none !important;
   }
 }
-#header > div #burger-container div span {
+#header > div aside #burger-container div span {
   width: 100%;
   background-color: #AC6737;
   margin-top: 20px;
@@ -511,11 +516,11 @@ ul li {
   width: 100%;
   border-radius: 10px;
 }
-#header > div #burger-container div span:nth-child(2) {
+#header > div aside #burger-container div span:nth-child(2) {
   top: 16px;
   width: 100%;
 }
-#header > div #burger-container div span:nth-child(3) {
+#header > div aside #burger-container div span:nth-child(3) {
   top: 32px;
   width: 100%;
 }

@@ -50,7 +50,13 @@
             }
         }
 
-        #burger-container {
+        aside{
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            #burger-container {
             cursor: pointer;
             width: 40px;
             position: absolute;
@@ -88,6 +94,9 @@
                 }
             }
         }
+        }
+
+        
 
         #nav-container {
             grid-area: nav;
