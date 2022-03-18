@@ -432,6 +432,11 @@ ul li {
 #nav-container ul li {
   padding: 10px;
 }
+@media (min-width: 1024px) {
+  #nav-container ul li {
+    padding: 15px;
+  }
+}
 #nav-container ul li button {
   color: #AC6737;
   font-size: 1.875rem;
@@ -459,6 +464,11 @@ ul li {
   width: 100%;
   left: 0;
   position: fixed;
+}
+@media (min-width: 1024px) {
+  #header {
+    padding: 10px 0;
+  }
 }
 #header > div {
   display: grid;
@@ -490,17 +500,16 @@ ul li {
 #header > div #logo-container a:visited:hover {
   color: #AC6737;
 }
-@media (min-width: 1024px) {
-  #header > div #logo-container a:link,
-#header > div #logo-container a:visited {
-    font-size: 2.25rem;
-  }
-}
 #header > div aside {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 15px;
+}
+@media (min-width: 1024px) {
+  #header > div aside {
+    display: none !important;
+  }
 }
 #header > div aside #burger-container {
   cursor: pointer;
@@ -508,11 +517,6 @@ ul li {
   grid-area: burger;
   height: 50px;
   width: 50px;
-}
-@media (min-width: 1024px) {
-  #header > div aside #burger-container {
-    display: none !important;
-  }
 }
 #header > div aside #burger-container #burger {
   position: absolute;
@@ -525,14 +529,14 @@ ul li {
   background-color: #FFF5EB;
   width: 100vw;
   height: 100vh;
-  z-index: -1800;
+  z-index: 800;
   position: fixed;
 }
 @media (min-width: 1024px) {
   #header > div #nav-container {
     display: block !important;
     background-color: transparent;
-    position: static;
+    position: relative;
     height: 100%;
     width: 100%;
     display: flex;

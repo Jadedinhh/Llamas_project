@@ -9,10 +9,11 @@
     left: 0;
     position: fixed;
 
-    // @include lg{
-    //     padding-top: 20px;
-    // }
+    @include lg{
+        padding: 10px 0;
+    }
 
+    
 
     >div {
 
@@ -26,6 +27,7 @@
         @include lg {
             grid-template-columns: 30% auto;
             grid-template-areas: "logo nav";
+
         }
 
         #logo-container {
@@ -47,9 +49,7 @@
                     color: $caramel;
                 }
 
-                @include lg {
-                    font-size: rem-calc(36);
-                }
+
             }
         }
 
@@ -62,8 +62,10 @@
             padding: 15px;
             // padding-right: 30px;
 
-           
 
+            @include lg {
+                display: none !important;
+            }
 
             #burger-container {
 
@@ -77,9 +79,7 @@
 
 
 
-                @include lg {
-                    display: none !important;
-                }
+
 
                 #burger {
                     position: absolute;
@@ -99,14 +99,14 @@
             background-color: $tan;
             width: 100vw;
             height: 100vh;
-            z-index: -1800;
+            z-index: 800;
             // text-align: center;
             position: fixed;
 
             @include lg {
                 display: block !important;
                 background-color: transparent;
-                position: static;
+                position: relative;
                 height: 100%;
                 width: 100%;
                 display: flex;

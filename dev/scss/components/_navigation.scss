@@ -20,6 +20,10 @@
         li {
             padding: 10px;
 
+            @include lg{
+                padding: 15px;
+            }
+
             button {
                 color: $caramel;
                 font-size: rem-calc(30);
@@ -37,6 +41,7 @@
 
                 @include lg {
                     font-size: rem-calc(20);
+                   
                 }
             }
         }
